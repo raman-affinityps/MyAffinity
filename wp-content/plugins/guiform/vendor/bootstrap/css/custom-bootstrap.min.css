@@ -1,0 +1,3061 @@
+/*!
+ * Bootstrap v3.3.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+
+.guiform * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.guiform *:before,
+.guiform *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.guiform #canvas,
+.guiform-form {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.guiform img {
+  vertical-align: middle;
+}
+
+.guiform .img-responsive,
+.guiform .thumbnail > img,
+.guiform .thumbnail a > img,
+.guiform .carousel-inner > .item > img,
+.guiform .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.guiform .img-rounded {
+  border-radius: 6px;
+}
+.guiform .img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.guiform .img-circle {
+  border-radius: 50%;
+}
+
+.guiform .thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+.guiform .thumbnail > img,
+.guiform .thumbnail a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.guiform a.thumbnail:hover,
+.guiform a.thumbnail:focus,
+.guiform a.thumbnail.active {
+  border-color: #428bca;
+}
+.guiform .thumbnail .caption {
+  padding: 9px;
+  color: #333;
+}
+
+.guiform h1, 
+.guiform h2, 
+.guiform h3, 
+.guiform h4, 
+.guiform h5, 
+.guiform h6{
+color: inherit;
+font-family: inherit;
+font-weight: 500;
+line-height: 1.1;
+}
+
+.guiform input,
+.guiform button,
+.guiform select,
+.guiform textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.guiform a {
+  color: #428bca;
+  text-decoration: none;
+}
+.guiform a:hover,
+.guiform a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+.guiform a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.guiform .text-left {
+  text-align: left;
+}
+.guiform .text-right {
+  text-align: right;
+}
+.guiform .text-center {
+  text-align: center;
+}
+.guiform .text-justify {
+  text-align: justify;
+}
+.guiform .text-nowrap {
+  white-space: nowrap;
+}
+.guiform .text-lowercase {
+  text-transform: lowercase;
+}
+.guiform .text-uppercase {
+  text-transform: uppercase;
+}
+.guiform .text-capitalize {
+  text-transform: capitalize;
+}
+.guiform .text-muted {
+  color: #777;
+}
+.guiform .text-primary {
+  color: #428bca;
+}
+.guiform a.text-primary:hover {
+  color: #3071a9;
+}
+.guiform .text-success {
+  color: #3c763d;
+}
+.guiform a.text-success:hover {
+  color: #2b542c;
+}
+.guiform .text-info {
+  color: #31708f;
+}
+.guiform a.text-info:hover {
+  color: #245269;
+}
+.guiform .text-warning {
+  color: #8a6d3b;
+}
+.guiform a.text-warning:hover {
+  color: #66512c;
+}
+.guiform .text-danger {
+  color: #a94442;
+}
+.guiform a.text-danger:hover {
+  color: #843534;
+}
+.guiform .bg-primary {
+  color: #fff;
+  background-color: #428bca;
+}
+.guiform a.bg-primary:hover {
+  background-color: #3071a9;
+}
+.guiform .bg-success {
+  background-color: #dff0d8;
+}
+.guiform a.bg-success:hover {
+  background-color: #c1e2b3;
+}
+.guiform .bg-info {
+  background-color: #d9edf7;
+}
+.guiform a.bg-info:hover {
+  background-color: #afd9ee;
+}
+.guiform .bg-warning {
+  background-color: #fcf8e3;
+}
+.guiform a.bg-warning:hover {
+  background-color: #f7ecb5;
+}
+.guiform .bg-danger {
+  background-color: #f2dede;
+}
+.guiform a.bg-danger:hover {
+  background-color: #e4b9b9;
+}
+.guiform .page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.guiform ul,
+.guiform ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.guiform ul ul,
+.guiform ol ul,
+.guiform ul ol,
+.guiform ol ol {
+  margin-bottom: 0;
+}
+
+.guiform .col-sm-1, 
+.guiform .col-md-1, 
+.guiform .col-lg-1, 
+.guiform .col-sm-2, 
+.guiform .col-md-2, 
+.guiform .col-lg-2, 
+.guiform .col-sm-3, 
+.guiform .col-md-3, 
+.guiform .col-lg-3, 
+.guiform .col-sm-4, 
+.guiform .col-md-4, 
+.guiform .col-lg-4, 
+.guiform .col-sm-5, 
+.guiform .col-md-5, 
+.guiform .col-lg-5, 
+.guiform .col-sm-6, 
+.guiform .col-md-6, 
+.guiform .col-lg-6, 
+.guiform .col-sm-7, 
+.guiform .col-md-7, 
+.guiform .col-lg-7, 
+.guiform .col-sm-8, 
+.guiform .col-md-8, 
+.guiform .col-lg-8, 
+.guiform .col-sm-9, 
+.guiform .col-md-9, 
+.guiform .col-lg-9, 
+.guiform .col-sm-10, 
+.guiform .col-md-10, 
+.guiform .col-lg-10, 
+.guiform .col-sm-11, 
+.guiform .col-md-11, 
+.guiform .col-lg-11, 
+.guiform .col-sm-12, 
+.guiform .col-md-12, 
+.guiform .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.guiform #canvas .wrap{
+padding-left: 0;
+padding-right: 0;
+}
+
+.guiform #canvas .control-label{
+padding-left: 0;
+}
+
+@media (min-width: 321px) {
+  .guiform .col-sm-1, .guiform .col-sm-2, .guiform .col-sm-3, .guiform .col-sm-4, .guiform .col-sm-5, .guiform .col-sm-6, .guiform .col-sm-7, .guiform .col-sm-8, .guiform .col-sm-9, .guiform .col-sm-10, .guiform .col-sm-11, .guiform .col-sm-12 {
+    float: left;
+  }
+  .guiform .col-sm-12 {
+    width: 100%;
+  }
+  .guiform .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .guiform .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .guiform .col-sm-9 {
+    width: 75%;
+  }
+  .guiform .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .guiform .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .guiform .col-sm-6 {
+    width: 50%;
+  }
+  .guiform .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .guiform .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .guiform .col-sm-3 {
+    width: 25%;
+  }
+  .guiform .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .guiform .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .guiform .col-sm-pull-12 {
+    right: 100%;
+  }
+  .guiform .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .guiform .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .guiform .col-sm-pull-9 {
+    right: 75%;
+  }
+  .guiform .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .guiform .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .guiform .col-sm-pull-6 {
+    right: 50%;
+  }
+  .guiform .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .guiform .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .guiform .col-sm-pull-3 {
+    right: 25%;
+  }
+  .guiform .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .guiform .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .guiform .col-sm-pull-0 {
+    right: auto;
+  }
+  .guiform .col-sm-push-12 {
+    left: 100%;
+  }
+  .guiform .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .guiform .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .guiform .col-sm-push-9 {
+    left: 75%;
+  }
+  .guiform .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .guiform .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .guiform .col-sm-push-6 {
+    left: 50%;
+  }
+  .guiform .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .guiform .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .guiform .col-sm-push-3 {
+    left: 25%;
+  }
+  .guiform .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .guiform .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .guiform .col-sm-push-0 {
+    left: auto;
+  }
+  .guiform .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .guiform .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .guiform .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .guiform .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .guiform .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .guiform .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .guiform .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .guiform .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .guiform .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .guiform .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .guiform .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .guiform .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .guiform .col-sm-offset-0 {
+    margin-left: 0;
+  }
+  
+  .guiform #canvas .guiform .control-label{
+	padding-right: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+  .guiform .col-md-1, .guiform .col-md-2, .guiform .col-md-3, .guiform .col-md-4, .guiform .col-md-5, .guiform .col-md-6, .guiform .col-md-7, .guiform .col-md-8, .guiform .col-md-9, .guiform .col-md-10, .guiform .col-md-11, .guiform .col-md-12 {
+    float: left;
+  }
+  .guiform .col-md-12 {
+    width: 100%;
+  }
+  .guiform .col-md-11 {
+    width: 91.66666667%;
+  }
+  .guiform .col-md-10 {
+    width: 83.33333333%;
+  }
+  .guiform .col-md-9 {
+    width: 75%;
+  }
+  .guiform .col-md-8 {
+    width: 66.66666667%;
+  }
+  .guiform .col-md-7 {
+    width: 58.33333333%;
+  }
+  .guiform .col-md-6 {
+    width: 50%;
+  }
+  .guiform .col-md-5 {
+    width: 41.66666667%;
+  }
+  .guiform .col-md-4 {
+    width: 33.33333333%;
+  }
+  .guiform .col-md-3 {
+    width: 25%;
+  }
+  .guiform .col-md-2 {
+    width: 16.66666667%;
+  }
+  .guiform .col-md-1 {
+    width: 8.33333333%;
+  }
+  .guiform .col-md-pull-12 {
+    right: 100%;
+  }
+  .guiform .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .guiform .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .guiform .col-md-pull-9 {
+    right: 75%;
+  }
+  .guiform .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .guiform .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .guiform .col-md-pull-6 {
+    right: 50%;
+  }
+  .guiform .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .guiform .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .guiform .col-md-pull-3 {
+    right: 25%;
+  }
+  .guiform .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .guiform .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .guiform .col-md-pull-0 {
+    right: auto;
+  }
+  .guiform .col-md-push-12 {
+    left: 100%;
+  }
+  .guiform .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .guiform .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .guiform .col-md-push-9 {
+    left: 75%;
+  }
+  .guiform .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .guiform .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .guiform .col-md-push-6 {
+    left: 50%;
+  }
+  .guiform .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .guiform .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .guiform .col-md-push-3 {
+    left: 25%;
+  }
+  .guiform .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .guiform .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .guiform .col-md-push-0 {
+    left: auto;
+  }
+  .guiform .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .guiform .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .guiform .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .guiform .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .guiform .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .guiform .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .guiform .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .guiform .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .guiform .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .guiform .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .guiform .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .guiform .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .guiform .col-md-offset-0 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .guiform .col-lg-1, .guiform .col-lg-2, .guiform .col-lg-3, .guiform .col-lg-4, .guiform .col-lg-5, .guiform .col-lg-6, .guiform .col-lg-7, .guiform .col-lg-8, .guiform .col-lg-9, .guiform .col-lg-10, .guiform .col-lg-11, .guiform .col-lg-12 {
+    float: left;
+  }
+  .guiform .col-lg-12 {
+    width: 100%;
+  }
+  .guiform .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .guiform .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .guiform .col-lg-9 {
+    width: 75%;
+  }
+  .guiform .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .guiform .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .guiform .col-lg-6 {
+    width: 50%;
+  }
+  .guiform .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .guiform .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .guiform .col-lg-3 {
+    width: 25%;
+  }
+  .guiform .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .guiform .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .guiform .col-lg-pull-12 {
+    right: 100%;
+  }
+  .guiform .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .guiform .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .guiform .col-lg-pull-9 {
+    right: 75%;
+  }
+  .guiform .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .guiform .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .guiform .col-lg-pull-6 {
+    right: 50%;
+  }
+  .guiform .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .guiform .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .guiform .col-lg-pull-3 {
+    right: 25%;
+  }
+  .guiform .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .guiform .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .guiform .col-lg-pull-0 {
+    right: auto;
+  }
+  .guiform .col-lg-push-12 {
+    left: 100%;
+  }
+  .guiform .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .guiform .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .guiform .col-lg-push-9 {
+    left: 75%;
+  }
+  .guiform .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .guiform .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .guiform .col-lg-push-6 {
+    left: 50%;
+  }
+  .guiform .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .guiform .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .guiform .col-lg-push-3 {
+    left: 25%;
+  }
+  .guiform .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .guiform .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .guiform .col-lg-push-0 {
+    left: auto;
+  }
+  .guiform .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .guiform .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .guiform .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .guiform .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .guiform .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .guiform .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .guiform .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .guiform .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .guiform .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .guiform .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .guiform .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .guiform .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .guiform .col-lg-offset-0 {
+    margin-left: 0;
+  }
+}
+
+
+.guiform .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+.guiform .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.guiform .form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.guiform .form-control:-ms-input-placeholder {
+  color: #999;
+}
+.guiform .form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.guiform .form-control[disabled],
+.guiform .form-control[readonly],
+.guiform fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+.guiform textarea.form-control {
+  height: auto;
+}
+.guiform input[type="search"] {
+  -webkit-appearance: none;
+}
+
+.guiform .form-group {
+  margin-bottom: 15px;
+}
+.guiform .radio,
+.guiform .checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.guiform .radio label,
+.guiform .checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.guiform .radio input[type="radio"],
+.guiform .radio-inline input[type="radio"],
+.guiform .checkbox input[type="checkbox"],
+.guiform .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
+}
+.guiform .radio + .radio,
+.guiform .checkbox + .checkbox {
+  margin-top: -5px;
+}
+.guiform .radio-inline,
+.guiform .checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.guiform .radio-inline + .radio-inline,
+.guiform .checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.guiform input[type="radio"][disabled],
+.guiform input[type="checkbox"][disabled],
+.guiform input[type="radio"].disabled,
+.guiform input[type="checkbox"].disabled,
+.guiform fieldset[disabled] input[type="radio"],
+.guiform fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}
+.guiform .radio-inline.disabled,
+.guiform .checkbox-inline.disabled,
+.guiform fieldset[disabled] .radio-inline,
+.guiform fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+.guiform .radio.disabled label,
+.guiform .checkbox.disabled label,
+.guiform fieldset[disabled] .radio label,
+.guiform fieldset[disabled] .checkbox label {
+  cursor: not-allowed;
+}
+.guiform .form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+}
+.guiform .form-control-static.input-lg,
+.guiform .form-control-static.input-sm {
+  padding-right: 0;
+  padding-left: 0;
+}
+.guiform .input-sm,
+.guiform .form-group-sm .form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.guiform select.input-sm,
+.guiform select.form-group-sm .form-control {
+  height: 30px;
+  line-height: 30px;
+}
+.guiform textarea.input-sm,
+.guiform textarea.form-group-sm .form-control,
+.guiform select[multiple].input-sm,
+.guiform select[multiple].form-group-sm .form-control {
+  height: auto;
+}
+
+.guiform .input-lg,
+.guiform .form-group-lg .form-control {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.guiform select.input-lg,
+.guiform select.form-group-lg .form-control {
+  height: 46px;
+  line-height: 46px;
+}
+.guiform textarea.input-lg,
+.guiform textarea.form-group-lg .form-control,
+.guiform select[multiple].input-lg,
+.guiform select[multiple].form-group-lg .form-control {
+  height: auto;
+}
+
+.guiform .has-feedback {
+  position: relative;
+}
+
+.guiform .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none;
+}
+.guiform .form-group-lg + .form-control-feedback,
+.guiform .input-lg + .form-control-feedback {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+.guiform .form-group-sm + .form-control-feedback,
+.guiform .input-sm + .form-control-feedback {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.guiform .has-success .help-block,
+.guiform .has-success .control-label,
+.guiform .has-success .radio,
+.guiform .has-success .checkbox,
+.guiform .has-success .radio-inline,
+.guiform .has-success .checkbox-inline,
+.guiform .has-success.radio label,
+.guiform .has-success.checkbox label,
+.guiform .has-success.radio-inline label,
+.guiform .has-success.checkbox-inline label {
+  color: #3c763d;
+}
+.guiform .has-success .form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.guiform .has-success .form-control:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+.guiform .has-success .input-group-addon {
+  color: #3c763d !important;
+  background-color: #dff0d8 !important;
+  border-color: #3c763d !important;
+}
+.guiform .has-success .form-control-feedback {
+  color: #3c763d;
+}
+.guiform .has-warning .help-block,
+.guiform .has-warning .control-label,
+.guiform .has-warning .radio,
+.guiform .has-warning .checkbox,
+.guiform .has-warning .radio-inline,
+.guiform .has-warning .checkbox-inline,
+.guiform .has-warning.radio label,
+.guiform .has-warning.checkbox label,
+.guiform .has-warning.radio-inline label,
+.guiform .has-warning.checkbox-inline label {
+  color: #8a6d3b;
+}
+.guiform .has-warning .form-control {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.guiform .has-warning .form-control:focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+}
+.guiform .has-warning .input-group-addon {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #8a6d3b;
+}
+.guiform .has-warning .form-control-feedback {
+  color: #8a6d3b;
+}
+.guiform .has-error .help-block,
+.guiform .has-error .control-label,
+.guiform .has-error .radio,
+.guiform .has-error .checkbox,
+.guiform .has-error .radio-inline,
+.guiform .has-error .checkbox-inline,
+.guiform .has-error.radio label,
+.guiform .has-error.checkbox label,
+.guiform .has-error.radio-inline label,
+.guiform .has-error.checkbox-inline label {
+  color: #a94442;
+}
+.guiform .has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.guiform .has-error .form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+.guiform .has-error .input-group-addon {
+  color: #a94442 !important;
+  background-color: #f2dede !important;
+  border-color: #a94442 !important;
+}
+.guiform .has-error .form-control-feedback {
+  color: #a94442;
+}
+.guiform .has-feedback label ~ .form-control-feedback {
+  top: 25px;
+}
+.guiform .has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0;
+}
+.guiform .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+.guiform small.help-block {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .guiform .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .guiform .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .guiform .form-inline .form-control-static {
+    display: inline-block;
+  }
+  .guiform .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .guiform .form-inline .input-group .input-group-addon,
+  .guiform .form-inline .input-group .input-group-btn,
+  .guiform .form-inline .input-group .form-control {
+    width: auto;
+  }
+  .guiform .form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .guiform .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .guiform .form-inline .radio,
+  .guiform .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .guiform .form-inline .radio label,
+  .guiform .form-inline .checkbox label {
+    padding-left: 0;
+  }
+  .guiform .form-inline .radio input[type="radio"],
+  .guiform .form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .guiform .form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+.guiform .form-horizontal .radio,
+.guiform .form-horizontal .checkbox,
+.guiform .form-horizontal .radio-inline,
+.guiform .form-horizontal .checkbox-inline {
+  padding-top: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.guiform .form-horizontal .radio,
+.guiform .form-horizontal .checkbox {
+  min-height: 27px;
+}
+.guiform .form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .guiform .form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .guiform .form-horizontal .form-group-lg .control-label {
+    padding-top: 14.3px;
+  }
+}
+@media (min-width: 768px) {
+  .guiform .form-horizontal .form-group-sm .control-label {
+    padding-top: 6px;
+  }
+}
+.guiform .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.guiform .btn:focus,
+.guiform .btn:active:focus,
+.guiform .btn.active:focus,
+.guiform .btn.focus,
+.guiform .btn:active.focus,
+.guiform .btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.guiform .btn:hover,
+.guiform .btn:focus,
+.guiform .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.guiform .btn:active,
+.guiform .btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.guiform .btn.disabled,
+.guiform .btn[disabled],
+.guiform fieldset[disabled] .btn {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+.guiform .btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.guiform .btn-default:hover,
+.guiform .btn-default:focus,
+.guiform .btn-default.focus,
+.guiform .btn-default:active,
+.guiform .btn-default.active,
+.guiform .open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.guiform .btn-default:active,
+.guiform .btn-default.active,
+.guiform .open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.guiform .btn-default.disabled,
+.guiform .btn-default[disabled],
+.guiform fieldset[disabled] .btn-default,
+.guiform .btn-default.disabled:hover,
+.guiform .btn-default[disabled]:hover,
+.guiform fieldset[disabled] .btn-default:hover,
+.guiform .btn-default.disabled:focus,
+.guiform .btn-default[disabled]:focus,
+.guiform fieldset[disabled] .btn-default:focus,
+.guiform .btn-default.disabled.focus,
+.guiform .btn-default[disabled].focus,
+.guiform fieldset[disabled] .btn-default.focus,
+.guiform .btn-default.disabled:active,
+.guiform .btn-default[disabled]:active,
+.guiform fieldset[disabled] .btn-default:active,
+.guiform .btn-default.disabled.active,
+.guiform .btn-default[disabled].active,
+.guiform fieldset[disabled] .btn-default.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.guiform .btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+.guiform .btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.guiform .btn-primary:hover,
+.guiform .btn-primary:focus,
+.guiform .btn-primary.focus,
+.guiform .btn-primary:active,
+.guiform .btn-primary.active,
+.guiform .open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3071a9;
+  border-color: #285e8e;
+}
+.guiform .btn-primary:active,
+.guiform .btn-primary.active,
+.guiform .open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.guiform .btn-primary.disabled,
+.guiform .btn-primary[disabled],
+.guiform fieldset[disabled] .btn-primary,
+.guiform .btn-primary.disabled:hover,
+.guiform .btn-primary[disabled]:hover,
+.guiform fieldset[disabled] .btn-primary:hover,
+.guiform .btn-primary.disabled:focus,
+.guiform .btn-primary[disabled]:focus,
+.guiform fieldset[disabled] .btn-primary:focus,
+.guiform .btn-primary.disabled.focus,
+.guiform .btn-primary[disabled].focus,
+.guiform fieldset[disabled] .btn-primary.focus,
+.guiform .btn-primary.disabled:active,
+.guiform .btn-primary[disabled]:active,
+.guiform fieldset[disabled] .btn-primary:active,
+.guiform .btn-primary.disabled.active,
+.guiform .btn-primary[disabled].active,
+.guiform fieldset[disabled] .btn-primary.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.guiform .btn-primary .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+.guiform .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.guiform .btn-success:hover,
+.guiform .btn-success:focus,
+.guiform .btn-success.focus,
+.guiform .btn-success:active,
+.guiform .btn-success.active,
+.guiform .open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.guiform .btn-success:active,
+.guiform .btn-success.active,
+.guiform .open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.guiform .btn-success.disabled,
+.guiform .btn-success[disabled],
+fieldset[disabled] .btn-success,
+.guiform .btn-success.disabled:hover,
+.guiform .btn-success[disabled]:hover,
+.guiform fieldset[disabled] .btn-success:hover,
+.guiform .btn-success.disabled:focus,
+.guiform .btn-success[disabled]:focus,
+.guiform fieldset[disabled] .btn-success:focus,
+.guiform .btn-success.disabled.focus,
+.guiform .btn-success[disabled].focus,
+.guiform fieldset[disabled] .btn-success.focus,
+.guiform .btn-success.disabled:active,
+.guiform .btn-success[disabled]:active,
+.guiform fieldset[disabled] .btn-success:active,
+.guiform .btn-success.disabled.active,
+.guiform .btn-success[disabled].active,
+.guiform fieldset[disabled] .btn-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.guiform .btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.guiform .btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.guiform .btn-info:hover,
+.guiform .btn-info:focus,
+.guiform .btn-info.focus,
+.guiform .btn-info:active,
+.guiform .btn-info.active,
+.guiform .open > .dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.guiform .btn-info:active,
+.guiform .btn-info.active,
+.guiform .open > .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.guiform .btn-info.disabled,
+.guiform .btn-info[disabled],
+.guiform fieldset[disabled] .btn-info,
+.guiform .btn-info.disabled:hover,
+.guiform .btn-info[disabled]:hover,
+.guiform fieldset[disabled] .btn-info:hover,
+.guiform .btn-info.disabled:focus,
+.guiform .btn-info[disabled]:focus,
+.guiform fieldset[disabled] .btn-info:focus,
+.guiform .btn-info.disabled.focus,
+.guiform .btn-info[disabled].focus,
+.guiform fieldset[disabled] .btn-info.focus,
+.guiform .btn-info.disabled:active,
+.guiform .btn-info[disabled]:active,
+.guiform fieldset[disabled] .btn-info:active,
+.guiform .btn-info.disabled.active,
+.guiform .btn-info[disabled].active,
+.guiform fieldset[disabled] .btn-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.guiform .btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.guiform .btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.guiform .btn-warning:hover,
+.guiform .btn-warning:focus,
+.guiform .btn-warning.focus,
+.guiform .btn-warning:active,
+.guiform .btn-warning.active,
+.guiform .open > .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.guiform .btn-warning:active,
+.guiform .btn-warning.active,
+.guiform .open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.guiform .btn-warning.disabled,
+.guiform .btn-warning[disabled],
+.guiform fieldset[disabled] .btn-warning,
+.guiform .btn-warning.disabled:hover,
+.guiform .btn-warning[disabled]:hover,
+.guiform fieldset[disabled] .btn-warning:hover,
+.guiform .btn-warning.disabled:focus,
+.guiform .btn-warning[disabled]:focus,
+.guiform fieldset[disabled] .btn-warning:focus,
+.guiform .btn-warning.disabled.focus,
+.guiform .btn-warning[disabled].focus,
+.guiform fieldset[disabled] .btn-warning.focus,
+.guiform .btn-warning.disabled:active,
+.guiform .btn-warning[disabled]:active,
+.guiform fieldset[disabled] .btn-warning:active,
+.guiform .btn-warning.disabled.active,
+.guiform .btn-warning[disabled].active,
+.guiform fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.guiform .btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+.guiform .btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.guiform .btn-danger:hover,
+.guiform .btn-danger:focus,
+.guiform .btn-danger.focus,
+.guiform .btn-danger:active,
+.guiform .btn-danger.active,
+.guiform .open > .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.guiform .btn-danger:active,
+.guiform .btn-danger.active,
+.guiform .open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.guiform .btn-danger.disabled,
+.guiform .btn-danger[disabled],
+.guiform fieldset[disabled] .btn-danger,
+.guiform .btn-danger.disabled:hover,
+.guiform .btn-danger[disabled]:hover,
+.guiform fieldset[disabled] .btn-danger:hover,
+.guiform .btn-danger.disabled:focus,
+.guiform .btn-danger[disabled]:focus,
+.guiform fieldset[disabled] .btn-danger:focus,
+.guiform .btn-danger.disabled.focus,
+.guiform .btn-danger[disabled].focus,
+.guiform fieldset[disabled] .btn-danger.focus,
+.guiform .btn-danger.disabled:active,
+.guiform .btn-danger[disabled]:active,
+.guiform fieldset[disabled] .btn-danger:active,
+.guiform .btn-danger.disabled.active,
+.guiform .btn-danger[disabled].active,
+.guiform fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.guiform .btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.guiform .btn-link {
+  font-weight: normal;
+  color: #428bca;
+  border-radius: 0;
+}
+.guiform .btn-link,
+.guiform .btn-link:active,
+.guiform .btn-link.active,
+.guiform .btn-link[disabled],
+.guiform fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.guiform .btn-link,
+.guiform .btn-link:hover,
+.guiform .btn-link:focus,
+.guiform .btn-link:active {
+  border-color: transparent;
+}
+.guiform .btn-link:hover,
+.guiform .btn-link:focus {
+  color: #2a6496;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.guiform .btn-link[disabled]:hover,
+.guiform fieldset[disabled] .btn-link:hover,
+.guiform .btn-link[disabled]:focus,
+.guiform fieldset[disabled] .btn-link:focus {
+  color: #777;
+  text-decoration: none;
+}
+.guiform .btn-lg,
+.guiform .btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.guiform .btn-sm,
+.guiform .btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.guiform .btn-xs,
+.guiform .btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.guiform .btn-block {
+  display: block;
+  width: 100%;
+}
+.guiform .btn-block + .btn-block {
+  margin-top: 5px;
+}
+.guiform input[type="submit"].btn-block,
+.guiform input[type="reset"].btn-block,
+.guiform input[type="button"].btn-block {
+  width: 100%;
+}
+.guiform .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+       -o-transition: opacity .15s linear;
+          transition: opacity .15s linear;
+}
+.guiform .fade.in {
+  opacity: 1;
+}
+.guiform .collapse {
+  display: none;
+  visibility: hidden;
+}
+.guiform .collapse.in {
+  display: block;
+  visibility: visible;
+}
+.guiform tr.collapse.in {
+  display: table-row;
+}
+.guiform tbody.collapse.in {
+  display: table-row-group;
+}
+.guiform .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+       -o-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+       -o-transition-property: height, visibility;
+          transition-property: height, visibility;
+}
+.guiform .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.guiform .dropdown {
+  position: relative;
+}
+.guiform .dropdown-toggle:focus {
+  outline: 0;
+}
+
+.guiform .dropdown-menu,
+.colorpicker.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.colorpicker.dropdown-menu.colorpicker-visible {
+	min-width: 120px;
+	padding: 5px;
+}
+
+.guiform .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.guiform .dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.guiform .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.guiform .dropdown-menu > li > a:hover,
+.guiform .dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.guiform .dropdown-menu > .active > a,
+.guiform .dropdown-menu > .active > a:hover,
+.guiform .dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #428bca;
+  outline: 0;
+}
+.guiform .dropdown-menu > .disabled > a,
+.guiform .dropdown-menu > .disabled > a:hover,
+.guiform .dropdown-menu > .disabled > a:focus {
+  color: #777;
+}
+.guiform .dropdown-menu > .disabled > a:hover,
+.guiform .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.guiform .open > .dropdown-menu {
+  display: block;
+}
+.guiform .open > a {
+  outline: 0;
+}
+.guiform .dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.guiform .dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
+.guiform .dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap;
+}
+.guiform .dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+}
+.guiform .pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.guiform .dropup .caret,
+.guiform .navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px solid;
+}
+.guiform .dropup .dropdown-menu,
+.guiform .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+@media (min-width: 768px) {
+  .guiform .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  .guiform .navbar-right .dropdown-menu-left {
+    right: auto;
+    left: 0;
+  }
+}
+.guiform .btn-group,
+.guiform .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.guiform .btn-group > .btn,
+.guiform .btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
+.guiform .btn-group > .btn:hover,
+.guiform .btn-group-vertical > .btn:hover,
+.guiform .btn-group > .btn:focus,
+.guiform .btn-group-vertical > .btn:focus,
+.guiform .btn-group > .btn:active,
+.guiform .btn-group-vertical > .btn:active,
+.guiform .btn-group > .btn.active,
+.guiform .btn-group-vertical > .btn.active {
+  z-index: 2;
+}
+.guiform .btn-group > .btn:focus,
+.guiform .btn-group-vertical > .btn:focus {
+  outline: 0;
+}
+.guiform .btn-group .btn + .btn,
+.guiform .btn-group .btn + .btn-group,
+.guiform .btn-group .btn-group + .btn,
+.guiform .btn-group .btn-group + .btn-group {
+  margin-left: -1px;
+}
+.guiform .btn-toolbar {
+  margin-left: -5px;
+}
+.guiform .btn-toolbar .btn-group,
+.guiform .btn-toolbar .input-group {
+  float: left;
+}
+.guiform .btn-toolbar > .btn,
+.guiform .btn-toolbar > .btn-group,
+.guiform .btn-toolbar > .input-group {
+  margin-left: 5px;
+}
+.guiform .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
+}
+.guiform .btn-group > .btn:first-child {
+  margin-left: 0;
+}
+.guiform .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.guiform .btn-group > .btn:last-child:not(:first-child),
+.guiform .btn-group > .dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.guiform .btn-group > .btn-group {
+  float: left;
+}
+.guiform .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.guiform .btn-group > .btn-group:first-child > .btn:last-child,
+.guiform .btn-group > .btn-group:first-child > .dropdown-toggle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.guiform .btn-group > .btn-group:last-child > .btn:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.guiform .btn-group .dropdown-toggle:active,
+.guiform .btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+.guiform .btn-group > .btn + .dropdown-toggle {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.guiform .btn-group > .btn-lg + .dropdown-toggle {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.guiform .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.guiform .btn-group.open .dropdown-toggle.btn-link {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.guiform .btn .caret {
+  margin-left: 0;
+}
+.guiform .btn-lg .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0;
+}
+.guiform .dropup .btn-lg .caret {
+  border-width: 0 5px 5px;
+}
+.guiform .btn-group-vertical > .btn,
+.guiform .btn-group-vertical > .btn-group,
+.guiform .btn-group-vertical > .btn-group > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+.guiform .btn-group-vertical > .btn-group > .btn {
+  float: none;
+}
+.guiform .btn-group-vertical > .btn + .btn,
+.guiform .btn-group-vertical > .btn + .btn-group,
+.guiform .btn-group-vertical > .btn-group + .btn,
+.guiform .btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0;
+}
+.guiform .btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.guiform .btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.guiform .btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+}
+.guiform .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.guiform .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.guiform .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.guiform .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.guiform .btn-group-justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+.guiform .btn-group-justified > .btn,
+.guiform .btn-group-justified > .btn-group {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+.guiform .btn-group-justified > .btn-group .btn {
+  width: 100%;
+}
+.guiform .btn-group-justified > .btn-group .dropdown-menu {
+  left: auto;
+}
+.guiform [data-toggle="buttons"] > .btn input[type="radio"],
+.guiform [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+.guiform [data-toggle="buttons"] > .btn input[type="checkbox"],
+.guiform [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+.guiform .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.guiform .input-group[class*="col-"] {
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+.guiform .input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.guiform .input-group input[type="text"],
+.guiform .input-group input[type="file"],
+.guiform .input-group input[type="password"]{
+  margin: 0;
+}
+.guiform .input-group-sm > .form-control,
+.guiform .input-group-sm > .input-group-addon,
+.guiform .input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.guiform select.input-group-sm > .form-control,
+.guiform select.input-group-sm > .input-group-addon,
+.guiform select.input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  line-height: 30px;
+}
+.guiform textarea.input-group-sm > .form-control,
+.guiform textarea.input-group-sm > .input-group-addon,
+.guiform textarea.input-group-sm > .input-group-btn > .btn,
+.guiform select[multiple].input-group-sm > .form-control,
+.guiform select[multiple].input-group-sm > .input-group-addon,
+.guiform select[multiple].input-group-sm > .input-group-btn > .btn {
+  height: auto;
+}
+.guiform .input-group-addon,
+.guiform .input-group-btn,
+.guiform .input-group .form-control {
+  display: table-cell;
+}
+.guiform .input-group-addon:not(:first-child):not(:last-child),
+.guiform .input-group-btn:not(:first-child):not(:last-child),
+.guiform .input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.guiform .input-group-addon,
+.guiform .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.guiform .input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.guiform .input-group-addon.input-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.guiform .input-group-addon.input-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.guiform .input-group-addon input[type="radio"],
+.guiform .input-group-addon input[type="checkbox"] {
+  margin-top: 0;
+}
+.guiform .input-group .form-control:first-child,
+.guiform .input-group-addon:first-child,
+.guiform .input-group-btn:first-child > .btn,
+.guiform .input-group-btn:first-child > .btn-group > .btn,
+.guiform .input-group-btn:first-child > .dropdown-toggle,
+.guiform .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.guiform .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.guiform .input-group-addon:first-child {
+  border-right: 0;
+}
+.guiform .input-group .form-control:last-child,
+.guiform .input-group-addon:last-child,
+.guiform .input-group-btn:last-child > .btn,
+.guiform .input-group-btn:last-child > .btn-group > .btn,
+.guiform .input-group-btn:last-child > .dropdown-toggle,
+.guiform .input-group-btn:first-child > .btn:not(:first-child),
+.guiform .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.guiform .input-group-addon:last-child {
+  border-left: 0;
+}
+.guiform .input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+.guiform .input-group-btn > .btn {
+  position: relative;
+}
+.guiform .input-group-btn > .btn + .btn {
+  margin-left: -1px;
+}
+.guiform .input-group-btn > .btn:hover,
+.guiform .input-group-btn > .btn:focus,
+.guiform .input-group-btn > .btn:active {
+  z-index: 2;
+}
+.guiform .input-group-btn:first-child > .btn,
+.guiform .input-group-btn:first-child > .btn-group {
+  margin-right: -1px;
+}
+.guiform .input-group-btn:last-child > .btn,
+.guiform .input-group-btn:last-child > .btn-group {
+  margin-left: -1px;
+}
+
+.guiform .label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.guiform a.label:hover,
+.guiform a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.guiform .label:empty {
+  display: none;
+}
+.guiform .btn .label {
+  position: relative;
+  top: -1px;
+}
+.guiform .label-default {
+  background-color: #777;
+}
+.guiform .label-default[href]:hover,
+.guiform .label-default[href]:focus {
+  background-color: #5e5e5e;
+}
+.guiform .label-primary {
+  background-color: #428bca;
+}
+.guiform .label-primary[href]:hover,
+.guiform .label-primary[href]:focus {
+  background-color: #3071a9;
+}
+.guiform .label-success {
+  background-color: #5cb85c;
+}
+.guiform .label-success[href]:hover,
+.guiform .label-success[href]:focus {
+  background-color: #449d44;
+}
+.guiform .label-info {
+  background-color: #5bc0de;
+}
+.guiform .label-info[href]:hover,
+.guiform .label-info[href]:focus {
+  background-color: #31b0d5;
+}
+.guiform .label-warning {
+  background-color: #f0ad4e;
+}
+.guiform .label-warning[href]:hover,
+.guiform .label-warning[href]:focus {
+  background-color: #ec971f;
+}
+.guiform .label-danger {
+  background-color: #d9534f;
+}
+.guiform .label-danger[href]:hover,
+.guiform .label-danger[href]:focus {
+  background-color: #c9302c;
+}
+.guiform .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.guiform .alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.guiform .alert .alert-link {
+  font-weight: bold;
+}
+.guiform .alert > p,
+.guiform .alert > ul {
+  margin-bottom: 0;
+}
+.guiform .alert > p + p {
+  margin-top: 5px;
+}
+.guiform .alert-dismissable,
+.guiform .alert-dismissible {
+  padding-right: 35px;
+}
+.guiform .alert-dismissable .close,
+.guiform .alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.guiform .alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.guiform .alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.guiform .alert-success .alert-link {
+  color: #2b542c;
+}
+.guiform .alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.guiform .alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.guiform .alert-info .alert-link {
+  color: #245269;
+}
+.guiform .alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.guiform .alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.guiform .alert-warning .alert-link {
+  color: #66512c;
+}
+.guiform .alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.guiform .alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.guiform .alert-danger .alert-link {
+  color: #843534;
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.guiform .progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+.guiform .progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  -webkit-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}
+.guiform .progress-striped .progress-bar,
+.guiform .progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+          background-size: 40px 40px;
+}
+.guiform .progress.active .progress-bar,
+.guiform .progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+.guiform .progress-bar-success {
+  background-color: #5cb85c;
+}
+.guiform .progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.guiform .progress-bar-info {
+  background-color: #5bc0de;
+}
+.guiform .progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.guiform .progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.guiform .progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.guiform .progress-bar-danger {
+  background-color: #d9534f;
+}
+.guiform .progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.guiform .panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.guiform .panel-body {
+  padding: 15px;
+}
+.guiform .panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.guiform .panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.guiform .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.guiform .panel-title > a {
+  color: inherit;
+}
+.guiform .panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.guiform .panel > .list-group,
+.guiform .panel > .panel-collapse > .list-group {
+  margin-bottom: 0;
+}
+.guiform .panel > .list-group .list-group-item,
+.guiform .panel > .panel-collapse > .list-group .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+.guiform .panel > .list-group:first-child .list-group-item:first-child,
+.guiform .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.guiform .panel > .list-group:last-child .list-group-item:last-child,
+.guiform .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.guiform .panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0;
+}
+.guiform .list-group + .panel-footer {
+  border-top-width: 0;
+}
+.guiform .panel > .table,
+.guiform .panel > .table-responsive > .table,
+.guiform .panel > .panel-collapse > .table {
+  margin-bottom: 0;
+}
+.guiform .panel > .table caption,
+.guiform .panel > .table-responsive > .table caption,
+.guiform .panel > .panel-collapse > .table caption {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.guiform .panel > .table:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.guiform .panel > .table:first-child > thead:first-child > tr:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.guiform .panel > .table:first-child > tbody:first-child > tr:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.guiform .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.guiform .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.guiform .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.guiform .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+.guiform .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.guiform .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.guiform .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.guiform .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.guiform .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+.guiform .panel > .table:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.guiform .panel > .table:last-child > tbody:last-child > tr:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.guiform .panel > .table:last-child > tfoot:last-child > tr:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.guiform .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.guiform .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.guiform .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.guiform .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: 3px;
+}
+.guiform .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.guiform .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.guiform .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.guiform .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.guiform .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+  border-bottom-right-radius: 3px;
+}
+.guiform .panel > .panel-body + .table,
+.guiform .panel > .panel-body + .table-responsive,
+.guiform .panel > .table + .panel-body,
+.guiform .panel > .table-responsive + .panel-body {
+  border-top: 1px solid #ddd;
+}
+.guiform .panel > .table > tbody:first-child > tr:first-child th,
+.guiform .panel > .table > tbody:first-child > tr:first-child td {
+  border-top: 0;
+}
+.guiform .panel > .table-bordered,
+.guiform .panel > .table-responsive > .table-bordered {
+  border: 0;
+}
+.guiform .panel > .table-bordered > thead > tr > th:first-child,
+.guiform .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.guiform .panel > .table-bordered > tbody > tr > th:first-child,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.guiform .panel > .table-bordered > tfoot > tr > th:first-child,
+.guiform .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.guiform .panel > .table-bordered > thead > tr > td:first-child,
+.guiform .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.guiform .panel > .table-bordered > tbody > tr > td:first-child,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.guiform .panel > .table-bordered > tfoot > tr > td:first-child,
+.guiform .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+.guiform .panel > .table-bordered > thead > tr > th:last-child,
+.guiform .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.guiform .panel > .table-bordered > tbody > tr > th:last-child,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.guiform .panel > .table-bordered > tfoot > tr > th:last-child,
+.guiform .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.guiform .panel > .table-bordered > thead > tr > td:last-child,
+.guiform .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.guiform .panel > .table-bordered > tbody > tr > td:last-child,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.guiform .panel > .table-bordered > tfoot > tr > td:last-child,
+.guiform .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+.guiform .panel > .table-bordered > thead > tr:first-child > td,
+.guiform .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.guiform .panel > .table-bordered > tbody > tr:first-child > td,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.guiform .panel > .table-bordered > thead > tr:first-child > th,
+.guiform .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.guiform .panel > .table-bordered > tbody > tr:first-child > th,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+  border-bottom: 0;
+}
+.guiform .panel > .table-bordered > tbody > tr:last-child > td,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.guiform .panel > .table-bordered > tfoot > tr:last-child > td,
+.guiform .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.guiform .panel > .table-bordered > tbody > tr:last-child > th,
+.guiform .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.guiform .panel > .table-bordered > tfoot > tr:last-child > th,
+.guiform .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+  border-bottom: 0;
+}
+.guiform .panel > .table-responsive {
+  margin-bottom: 0;
+  border: 0;
+}
+.guiform .panel-group {
+  margin-bottom: 20px;
+}
+.guiform .panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.guiform .panel-group .panel + .panel {
+  margin-top: 5px;
+}
+.guiform .panel-group .panel-heading {
+  border-bottom: 0;
+}
+.guiform .panel-group .panel-heading + .panel-collapse > .panel-body,
+.guiform .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid #ddd;
+}
+.guiform .panel-group .panel-footer {
+  border-top: 0;
+}
+.guiform .panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #ddd;
+}
+.guiform .panel-default {
+  border-color: #ddd;
+}
+.guiform .panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.guiform .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.guiform .panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+.guiform .panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+.guiform .panel-primary {
+  border-color: #428bca;
+}
+.guiform .panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.guiform .panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #428bca;
+}
+.guiform .panel-primary > .panel-heading .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+.guiform .panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #428bca;
+}
+.guiform .panel-success {
+  border-color: #d6e9c6;
+}
+.guiform .panel-success > .panel-heading {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.guiform .panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d6e9c6;
+}
+.guiform .panel-success > .panel-heading .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+.guiform .panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d6e9c6;
+}
+.guiform .panel-info {
+  border-color: #bce8f1;
+}
+.guiform .panel-info > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.guiform .panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bce8f1;
+}
+.guiform .panel-info > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+.guiform .panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bce8f1;
+}
+.guiform .panel-warning {
+  border-color: #faebcc;
+}
+.guiform .panel-warning > .panel-heading {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.guiform .panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #faebcc;
+}
+.guiform .panel-warning > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #8a6d3b;
+}
+.guiform .panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #faebcc;
+}
+.guiform .panel-danger {
+  border-color: #ebccd1;
+}
+.guiform .panel-danger > .panel-heading {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.guiform .panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ebccd1;
+}
+.guiform .panel-danger > .panel-heading .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+.guiform .panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ebccd1;
+}
+
+.guiform .well-sm {
+  padding: 9px;
+  border-radius: 3px;
+}
+.guiform .close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+.guiform .close:hover,
+.guiform .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.guiform button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.guiform .modal-open {
+  overflow: hidden;
+}
+.guiform .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.guiform .modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+.guiform .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.guiform .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.guiform .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.guiform .modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.guiform .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+.guiform .modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.guiform .modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.guiform .modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.guiform .modal-header .close {
+  margin-top: -2px;
+}
+.guiform .modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.guiform .modal-body {
+  position: relative;
+  padding: 15px;
+}
+.guiform .modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.guiform .modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.guiform .modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.guiform .modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.guiform .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .guiform .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .guiform .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  .guiform .modal-sm {
+    width: 300px;
+  }
+}
+.guiform .tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  visibility: visible;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.guiform .tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+.guiform .tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+.guiform .tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+.guiform .tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+.guiform .tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+.guiform .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+}
+.guiform .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.guiform .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.guiform .tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.guiform .tooltip.top-right .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.guiform .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+.guiform .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+.guiform .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.guiform .tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.guiform .tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.guiform .popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.guiform .popover.top {
+  margin-top: -10px;
+}
+.guiform .popover.right {
+  margin-left: 10px;
+}
+.guiform .popover.bottom {
+  margin-top: 10px;
+}
+.guiform .popover.left {
+  margin-left: -10px;
+}
+.guiform .popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+.guiform .popover-content {
+  padding: 9px 14px;
+}
+.guiform .popover > .arrow,
+.guiform .popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.guiform .popover > .arrow {
+  border-width: 11px;
+}
+.guiform .popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+.guiform .popover.top > .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, .25);
+  border-bottom-width: 0;
+}
+.guiform .popover.top > .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+.guiform .popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, .25);
+  border-left-width: 0;
+}
+.guiform .popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+.guiform .popover.bottom > .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+.guiform .popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.guiform .popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, .25);
+}
+.guiform .popover.left > .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #fff;
+}
+
+.guiform .clearfix:before,
+.guiform .clearfix:after,
+.guiform .form-horizontal .form-group:before,
+.guiform .form-horizontal .form-group:after,
+.guiform .btn-toolbar:before,
+.guiform .btn-toolbar:after,
+.guiform .btn-group-vertical > .btn-group:before,
+.guiform .btn-group-vertical > .btn-group:after,
+.guiform .panel-body:before,
+.guiform .panel-body:after,
+.guiform .modal-footer:before,
+.guiform .modal-footer:after {
+  display: table;
+  content: " ";
+}
+.guiform .clearfix:after,
+.guiform .form-horizontal .form-group:after,
+.guiform .btn-toolbar:after,
+.guiform .btn-group-vertical > .btn-group:after,
+.guiform .panel-body:after,
+.guiform .modal-footer:after {
+  clear: both;
+}
+.guiform .center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.guiform .pull-right {
+  float: right !important;
+}
+.guiform .pull-left {
+  float: left !important;
+}
+
+.guiform .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+.guiform .visible-sm {
+  display: none !important;
+}
+.guiform .visible-sm-block,
+.guiform .visible-sm-inline,
+.guiform .visible-sm-inline-block{
+  display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .guiform .visible-sm {
+    display: block !important;
+  }
+  .guiform table.visible-sm {
+    display: table;
+  }
+  .guiform tr.visible-sm {
+    display: table-row !important;
+  }
+  .guiform th.visible-sm,
+  .guiform td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .guiform .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .guiform .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .guiform .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .guiform .hidden-sm {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=bootstrap.css.map */

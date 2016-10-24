@@ -1,0 +1,379 @@
+#guifbox .ui-tabs{
+border-radius: 0px;
+padding: 0px;
+}
+
+
+#guifbox .btn{
+font-size: 14px;
+}
+
+#guifbox .btn span{
+margin-right: 6px;
+}
+
+#guifbox-lockscreen{
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 99999;
+opacity: 0;	
+background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#guifbox-overlay{
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 999;
+}
+
+#guifbox-window{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+border-radius: 6px;
+display: table;
+min-height: 50px;
+min-width: 350px;
+padding: 8px;
+position: absolute;
+top: -1000px;
+z-index: 999;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+z-index: 99999;
+}
+
+#guifbox-window input[type="radio"],
+#guifbox-window input[type="checkbox"]{
+vertical-align: middle;
+}
+
+#guifbox-header{
+background: none repeat scroll 0 0 #21759B;
+border-bottom: 1px solid #DFDFDF;
+box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
+color: #FFFFFF;
+font-weight: bold;
+padding: 8px;
+text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.35)
+}
+
+#guifbox-button{
+background-color: #FFFFFF;
+background-image: linear-gradient(to bottom, #FDFDFD, #DDDDDD);
+border-top: 1px solid #DFDFDF;
+box-shadow: 0 -4px 4px -4px rgba(0, 0, 0, 0.1);
+clear: both;
+font-weight: bold;
+padding: 10px;
+text-align: right;
+}
+
+#guifbox-button button{
+padding: 0px 15px;
+}
+
+#guifbox-header span{
+line-height: normal;
+font-size: 16px;
+}
+
+#guifbox-title{
+display: inline-block;
+}
+
+#guifbox-close{
+float: right;
+}
+
+#guifbox-button #guifbox-close{
+float: none;
+}
+
+#guifbox-fullscreen{
+display: inline-block;
+float: right;
+height: 20px;
+width: 21px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+#guifbox-spinner{
+background: url("../images/loading.gif") no-repeat scroll 0 0 transparent;
+height: 16px;
+width: 20px;
+display: none;
+position: absolute;
+right: 145px;
+bottom: 25px;
+}
+
+#guifbox-fullscreen:hover{
+background-color: #FFFFFF;
+cursor: pointer;
+}
+
+#guifbox-body{
+background-color: #FFFBCC;
+}
+
+#guifbox-body #error{
+padding: 20px 0;
+}
+
+
+#guiBox-loader{
+display: block;
+margin: auto;
+}
+
+#guifbox-close{
+cursor: pointer;
+font-size: 23px !important;
+}
+
+#guifbox-close:hover{
+color: red;	
+}
+
+#guifbox-close:before {
+vertical-align: top;
+}
+
+#guifbox-body .ui-tabs-panel{
+overflow: visible !important;
+max-height: none !important;
+}
+
+#guifbox-body table{
+border-style: solid solid none;
+border-width: 1px 1px medium;
+border-color: #21759B;
+background-color: #FFFBCC;
+width: 100%;
+margin-bottom: 10px;
+}
+
+#guifbox-body #options-list{
+border: 1px solid #21759B;
+background-color: #FFFBCC;
+width: 100%;
+margin-bottom: 10px;
+}
+
+#guifbox-body #options-list .ui-spinner{
+border-radius: 0;
+overflow: hidden;
+padding: 3px;
+ width: 50%;
+}
+
+#guifbox-body #options-list .prop-spinner{
+height: auto;
+margin: 0;
+padding: 2px;
+width: 90%;
+}
+
+#guifbox-body th{
+background-color: #F1F1F1;
+background-image: -moz-linear-gradient(top, #ECECEC, #F9F9F9);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ECECEC), to(#F9F9F9));
+background-image: -webkit-linear-gradient(top, #ECECEC, #F9F9F9);
+background-image: -o-linear-gradient(top, #ECECEC, #F9F9F9);
+background-image: linear-gradient(to bottom, #ECECEC, #F9F9F9);
+background-repeat: repeat-x;
+}
+
+#guifbox-body td,
+#guifbox-body th{
+padding: 10px 0px;
+border-bottom: 1px solid #21759B;
+border-right: 1px solid #21759B;
+}
+
+#guifbox-body tr td:last-of-type,
+#guifbox-body tr th:last-of-type{
+border-right: medium none;
+}
+
+#guifbox-body .fa{
+font-size: 15px;
+}
+
+#guifbox-body .input-group-btn .fa{
+width: 18px;
+}
+
+#guifbox-body .label-primary,
+#guifbox-body .label-danger,
+#guifbox-body .label-success,
+#guifbox-body .btn-primary > a{
+color: #FFFFFF !important;
+}
+
+#guifbox-body #p_item_id,
+#guifbox-body #p_field_name{
+font-weight: bold; 
+font-size: 13px;
+}
+
+#guifbox-body .prop-hint{
+padding: 0 10px;
+color: #666060;
+}
+
+#guifbox-body .prop-hint strong{
+color: #333333;
+}
+
+#guifbox-body .prop-label{
+border-right: none;
+background-color: #FFFFFF;
+width: 50%; 
+font-weight: bold;
+vertical-align: top;
+font-size: 11px;
+}
+
+#guifbox-body .prop-value{
+background-color: #EEEEEE;
+font-size: 11px;
+vertical-align: top;
+}
+
+#window-properties .prop-value input[type="checkbox"], 
+#window-properties .prop-value input[type="radio"] {
+margin: 0 0px 0 -20px;
+}
+
+#window-properties .prop-value .input-group input[type="checkbox"]{
+margin: 0;
+}
+
+#guifbox-body .prop-spinner{
+padding: 3px 8px;
+}
+
+#guifbox-body .input-group-addon {
+cursor: pointer;
+}
+
+
+#guifbox-body .ui-widget-content{
+}
+
+#guifbox-body .prop-value input,
+#guifbox-body .prop-value select,
+#guifbox-body .prop-value textarea{
+font-size: 14px;
+}
+
+#guifbox-body .prop-value select{
+padding: 4px 8px;
+}
+
+#guifbox-body .prop-value option{
+padding: 4px 10px;
+}
+
+#guifbox-body p{
+padding: 0 10px;
+margin: 0;
+font-size: 13px;
+}
+
+.guifbox-maxscreen#guifbox-window{
+left: 0 !important;
+top: 0 !important;
+bottom: 0;
+right: 0;
+width: 100%;
+}
+
+.guifbox-maxscreen #guifbox-border{
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+}
+
+.guifbox-maxscreen #guifbox-body{
+max-width: none;
+}
+
+.guifbox-maxscreen .ui-tabs-panel{
+width: auto !important;
+}
+
+
+
+/*------------------------ BEGIN Properties Style --------------------------------------*/
+#p_maximum_number .input-group-addon:last-of-type,
+#p_minimum_number .input-group-addon:last-of-type{
+padding: 0;
+}
+
+#p_maximum_number .input-group-addon:last-of-type span,
+#p_minimum_number .input-group-addon:last-of-type span{
+border: medium none;
+border-radius: 0;
+}
+
+#p_maximum_number .input-group-addon:last-of-type input,
+#p_minimum_number .input-group-addon:last-of-type input{
+width: 80px;
+padding: 5px;
+}
+
+#p_file_size_limit .textinput{
+float: left;
+overflow: hidden;
+width: 75%;
+}
+
+#p_file_size_limit .ui-spinner{
+float: left;
+width: 25%;
+border-radius: 0;
+}
+
+#p_file_size_limit .prop-spinner{
+height: 26px;
+margin: 3px;
+padding: 0 10px;
+width: 80%;
+border-radius: 0;
+}
+
+.input-group .input-group-addon .sp-dd{
+display: none;
+}
+
+.input-group .input-group-addon .sp-preview{
+height: 18px;
+width: 18px;
+margin-right: 0px;
+border: none;
+}
+
+.input-group .input-group-addon .sp-replacer{
+padding: 0px;	
+}
+
+#p_regexp .textinput{
+border-top-right-radius: 3px;
+}
+
+
+#p_regexp .textinput:last-child{
+border-top-right-radius: 0;
+}
+
+/*------------------------ END Properties Style --------------------------------------*/

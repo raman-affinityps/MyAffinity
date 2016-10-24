@@ -1,0 +1,132 @@
+
+div.updated, div.error {
+margin-bottom: 15px;
+}
+
+#settings{
+width: 99%;
+}
+
+.wrap{
+	margin: 0;
+}
+
+.access-denied{
+border-bottom: 1px solid #E65E5E;
+border-top: 1px double #E65E5E;
+color: #E65E5E;
+margin-top: 5%;
+padding: 20px 0;
+text-align: center;
+text-shadow: 2px 3px 0 #E65E5E;
+text-transform: uppercase;
+width: 99%;	
+}
+
+/*--------------START widefat table-----------------------------------*/
+.widefat thead th:last-of-type {
+width: 180px;
+}
+
+.widefat .check-column {
+text-align: center;
+width: 3%;
+}
+
+.widefat th input {
+margin: 0;
+}
+
+.widefat th.column-name{
+width: 200px;
+}
+
+.widefat th.column-font_family{
+width: 250px;
+}
+
+#wpbody-content .quick-edit-row-post .inline-edit-col-left,
+#wpbody-content .quick-edit-row-post .inline-edit-col-right,
+#wpbody-content .inline-edit-row-post .inline-edit-col-center {
+    width: 33% !important;
+}
+/*--------------END widefat table-----------------------------------*/
+
+
+
+#settings .icon32 {
+  margin: 0;
+}
+
+.alternate, .alt {
+line-height: normal;
+}
+
+.font{
+font-size: 24px;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+}
+
+.inline-edit-row fieldset label, 
+.inline-edit-row fieldset span.inline-edit-categories-label {
+display: block;
+margin: 15px 0;
+}
+
+.inline-edit-row fieldset label span.title{
+width: 150px;
+}
+
+.inline-edit-row fieldset label span.input-text-wrap{
+margin-left: 150px;
+}
+
+.inline-edit-row .input-text-wrap input[type="text"],
+.inline-edit-row .input-text-wrap select{
+width: 285px;
+}
+
+.inline-edit-row .input-text-wrap input.port{
+width: 100px;
+}
+
+.wp_list_datastructure th#name{
+width: auto;
+}
+
+.wp_list_datastructure th#type,
+.wp_list_datastructure th#collation{
+width: 230px;
+}
+
+/*--------------Export Page-----------------------------------*/
+#guif-export{
+
+}
+
+#guif-export select{
+width: 25em;
+}
+
+#guif-export #row-fields,
+#guif-export #row-button{
+display: none;
+}
+
+#guif-export #display-fields{
+background-color: #FFFFFF;
+height: 300px;
+overflow-y: scroll;
+padding: 10px;
+width: 330px;
+}
+
+#guif-export label{
+display: block;
+}
+
+#guif-export ul{
+	margin: 0px;
+}

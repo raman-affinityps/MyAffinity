@@ -1,0 +1,1469 @@
+
+#canvas,
+#canvas *,
+#canvas *:before,
+#canvas *:after{
+-moz-box-sizing: border-box !important; 
+-webkit-box-sizing: border-box !important; 
+box-sizing: border-box !important;
+}
+
+input::-moz-focus-inner { border:0; padding:0 }
+
+.clearfix:after{ 
+content: "\00A0"; 
+display: block; 
+clear: both; 
+visibility: hidden; 
+line-height: 0; 
+height: 0;
+width:0;
+font-size: 0px;
+}
+
+.clearfix{ 
+display: inline-block;
+}
+
+html[xmlns] .clearfix { 
+display: block;
+}
+
+* html .clearfix{ 
+height: 1%;
+}
+
+.clearfix {
+display: block;
+zoom: 1; 
+}
+
+body #canvas p{
+font-size: 14px;
+}
+
+body#GuiForm{
+background-color: transparent;
+margin: 0;
+}
+
+
+/*------------------------ Start Jquery UI ----------------------------------------*/
+
+
+
+..ui-spinner.ui-widget{
+height: auto !important;
+}
+
+.ui-buttonset .ui-button {
+margin-right: 0;
+float: left;
+}
+
+.ui-buttonset.button,
+.ui-buttonset.button:hover{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: medium none;
+box-shadow: none;
+display: block;
+ padding: 0px;
+}
+
+.ui-slider.ui-widget{
+display: block;
+margin: 10px 0 5px;
+}
+
+.ui-datepicker {
+padding: 1px;
+width: 250px;
+z-index: 2 !important;
+}
+
+.hasDatepicker .ui-widget-header {
+    color: inherit;
+}
+
+.hasDatepicker .ui-widget-content {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: 1px solid #ddd;
+color: #333;
+}
+
+.ui-datepicker table {
+margin: 0;
+}
+
+.ui-datepicker-multi{
+width: auto !important;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+width: 100%;
+}
+
+.ui-datepicker .ui-datepicker-header,
+.ui-datepicker .ui-timepicker-div .ui-widget-header{
+background: none repeat scroll 0 0 #EC6A38;
+border-radius: 5px 5px 0 0;
+padding: 6px 0;
+position: relative;
+ height: auto;
+}
+
+.ui-datepicker .ui-datepicker-title {
+font-size: 14px;
+font-weight: 700;
+line-height: 26px;
+text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+background: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI3cHgiIGhlaWdodD0iMTFweCIgdmlld0JveD0iMCAwIDcgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcgMTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNMC40MDYsNC41NTdDMC40MTIsNC41NTEsMC40Miw0LjU1LDAuNDI2LDQuNTQ0DQoJCQljMC4wMDEtMC4wMDEsMC4wMDEtMC4wMDIsMC4wMDItMC4wMDNMNC41OSwwLjQxMWMwLjU0Ny0wLjUzNywxLjQzNC0wLjUzNywxLjk4LDBjMC41NDcsMC41MzcsMC41NDcsMS40MDgsMCwxLjk0NUwzLjM3OSw1LjUyMg0KCQkJbDMuMjEyLDMuMTIzYzAuNTQ3LDAuNTM2LDAuNTQ3LDEuNDA3LDAsMS45NDRzLTEuNDM0LDAuNTM3LTEuOTgsMEwwLjQwNiw2LjUwMkMtMC4xNDEsNS45NjUtMC4xNDEsNS4wOTQsMC40MDYsNC41NTd6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+.ui-datepicker .ui-datepicker-next {
+right: 10px;
+}
+.ui-datepicker .ui-datepicker-next span {
+background: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI3cHgiIGhlaWdodD0iMTFweCIgdmlld0JveD0iMCAwIDcgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcgMTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNNi41OTIsNC41NTdDNi41ODYsNC41NTEsNi41NzgsNC41NSw2LjU3Miw0LjU0NA0KCQkJQzYuNTcxLDQuNTQzLDYuNTcxLDQuNTQyLDYuNTcsNC41NDJMMi40MDgsMC40MTFjLTAuNTQ3LTAuNTM3LTEuNDMzLTAuNTM3LTEuOTc5LDBjLTAuNTQ3LDAuNTM3LTAuNTQ3LDEuNDA4LDAsMS45NDVsMy4xOSwzLjE2Nw0KCQkJTDAuNDA2LDguNjQ2Yy0wLjU0NiwwLjUzNi0wLjU0NiwxLjQwNywwLDEuOTQ0YzAuNTQ3LDAuNTM3LDEuNDM0LDAuNTM3LDEuOTgsMGw0LjIwNi00LjA4OEM3LjEzOSw1Ljk2NSw3LjEzOSw1LjA5NCw2LjU5Miw0LjU1N3oNCgkJCSIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+.ui-datepicker th {
+background: none repeat scroll 0 0 #F1F1EF;
+border: 0 none;
+color: #4F4F4B;
+font-size: 11px;
+height: 25px;
+padding: 0;
+text-align: center;
+text-transform: capitalize;
+}
+
+.ui-datepicker th span {
+display: block;
+line-height: 20px;
+padding-top: 3px;
+text-indent: 4px;
+width: 35px;
+}
+
+.ui-datepicker td {
+border: 1px solid #EFF1F2;
+vertical-align: top;
+}
+
+.ui-datepicker td a.ui-state-default{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: 0 none;
+color: #504E47;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.ui-datepicker td a.ui-state-default:active,
+.ui-datepicker td a.ui-state-active{
+background: none repeat scroll 0 0 #00AEEC;
+border: 0 none;
+color: #FFFFFF;
+z-index: 2;
+}
+
+.ui-datepicker td.ui-datepicker-today a.ui-state-default{
+background-color: rgba(0, 0, 0, 0);
+color: #EB581F;
+}
+.ui-datepicker td.ui-datepicker-today a.ui-state-hover{
+box-shadow: 0 0 0 3px #FCF1C7 inset;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover{
+background: none;
+border: none;
+cursor: pointer;	
+}
+
+.ui-datepicker-nav, .ui-datepicker .ui-datepicker-prev, 
+.ui-datepicker .ui-datepicker-next {
+top: 7px;
+}
+
+.ui-datepicker .ui-datepicker-prev, 
+.ui-datepicker .ui-datepicker-next {
+top: 4px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+left: 3px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+right: 3px;
+}
+
+.ui-datepicker .ui-datepicker-title select,
+#canvas .ui-datepicker .ui-datepicker-title select  {
+margin-right: 5px;
+width: 48%;
+font-weight: normal;
+height: 22px;
+padding: 0;
+color: #000000;
+}
+
+#canvas .ui-datepicker .ui-datepicker-header  {
+min-height: 40px;
+}
+
+#canvas .ui-datepicker .ui-datepicker-title select  {
+width: 47%;
+}
+
+#canvas .ui-datepicker-inline{
+	width: 100% !important;
+}
+
+.ui-datepicker .ui-datepicker-title select:last-of-type{
+margin-right: 0px;
+}
+
+.ui-datepicker td span, 
+.ui-datepicker td a{
+font-size: 13px;
+height: 25px;
+padding: 3px;
+text-align: center;
+width: auto;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+margin: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+font-size: 14px;
+}
+
+/*- Start timepicker ----------------------------------------*/
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; margin: 5px;}
+
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 5px 0 0 5px; font-size: 12px;}
+.ui-timepicker-div dl dd { padding: 1px 0; margin: 0 10px 0 35%; font-size: 12px; font-weight: bold;}
+.ui-timepicker-div dl dt.ui_tpicker_time_label{padding-top: 1px;}
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 40% 10px 10px; }
+
+
+.ui-datepicker-multi-2 .ui-timepicker-div dl dd{
+margin: 0 20px 10px 20%;
+}
+
+.ui-datepicker-multi-3 .ui-timepicker-div dl dd{
+margin: 0 20px 10px 15%;
+}
+
+#canvas .ui-accordion .ui-accordion-header {
+padding: 10px 7px 10px 33px;
+}
+
+#canvas .ui-accordion-content{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+padding: 15px;
+}
+
+
+/*- Start BootStrap Style ----------------------------------------*/
+
+.guiform #canvas .f_submit .hide{
+	display: none;
+}
+
+.guiform #canvas .f_submit .btn,
+.guiform #canvas .f_page_break .btn {
+padding: 8px 18.5px;
+}
+
+.guiform #canvas .f_submit .col-sm-0{
+	display: none;
+}
+
+.icon-spin:before,
+.form-control-feedback.fa-refresh{
+font-family: FontAwesome !important;
+}
+
+.icon-spin,
+.form-control-feedback.fa-refresh{
+animation: 1.5s linear 0s normal none infinite running spin;
+-moz-animation : 1.5s linear 0s normal none infinite spin;
+-webkit-animation : 1.5s linear 0s normal none infinite spin;
+-o-animation : 1.5s linear 0s normal none infinite spin;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.guiform #canvas .form-control-feedback {
+display: block !important;
+/* line-height: 34px !important; */
+top: 0 !important;
+}
+
+.guiform #canvas .f_select .form-control-feedback {
+right: 18px;
+}
+
+.guiform #canvas .f_spinner .form-control-feedback {
+right: 27px;
+}
+
+/*- END BootStrap Style ----------------------------------------*/
+
+
+/*- Start switch-button ----------------------------------------*/
+.switch-button-label {
+float: left;
+font-size: 10pt;
+cursor: pointer;
+margin-top: 5px;
+}
+
+.switch-button-label.off {
+color: #adadad;
+}
+
+.switch-button-label.on {
+color: #0088CC;
+}
+
+.switch-button-background {
+float: left;
+position: relative;
+background: #ccc;
+border: 1px solid #aaa;
+margin: 1px 10px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.switch-button-button {
+position: absolute;
+left: -1px;
+top : -1px;
+background: #FAFAFA;
+border: 1px solid #aaa;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.switch-button-background.checked .switch-button-button{
+background: none repeat scroll 0 0 #7AD03A
+}
+
+/*------------------------ End Jquery UI ----------------------------------------*/
+
+/*------------------------ Start TINYMCE ----------------------------------------*/
+.mce-floatpanel{
+	z-index: 999999 !important;
+}
+/*------------------------ End TINYMCE ----------------------------------------*/
+
+
+/*------------------------ Start SPECTRUM ----------------------------------------*/
+.sp-picker-container{
+width: 204px;
+}
+
+.sp-button-container{
+clear: both;
+float: none;
+text-align: right;
+}
+
+.colorpicker .sp-input-container{
+width: 175px;	
+}
+
+.sp-input{
+width: 100% !important; 
+padding: 5px;
+}
+
+.sp-input{
+background: #FFFFFF; 
+padding: 2.5px;
+}
+
+#canvas button.sp-choose{
+float: none;
+padding: 5px 15px !important;
+}
+
+.sp-cancel{
+margin: 9px 10px;
+display: inline-block;
+}
+
+.sp-container button{
+background-color: #21759B;
+background-image: linear-gradient(to bottom, #2A95C5, #21759B);
+border-color: #21759B #21759B #1E6A8D;
+border-style: solid;
+border-width: 1px;
+color: #FFFFFF;
+cursor: pointer;
+padding: 6px 20px;
+font-size: 12px;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+line-height: 18px;
+font-weight: bold;
+transition: all 0.3s ease-in-out 0s;
+}
+
+.sp-replacer {
+padding: 5px;
+vertical-align: bottom;
+margin-left: -1px;
+}
+
+/*------------------------ End SPECTRUM ----------------------------------------*/
+
+
+.guiform #container{
+display: inline-table; /*-- do not change this line--*/
+}
+
+.guiform #canvas{
+display: table;  /*-- do not change this line--*/
+padding: 5px 0;
+}
+
+
+.guiform #canvas .form-horizontal .form-group {
+margin-left: 0;
+margin-right: 0;
+}
+
+
+.wp-admin select {
+line-height: 1.42857;
+vertical-align: middle;
+height: 34px;
+padding: 6px 12px;
+}
+
+.guiform #canvas input[type="file"]{
+background-color: #FFFFFF;
+height: auto;
+}
+
+.guiform #canvas .error-message{
+background: none repeat scroll 0 0 #E65E5E;
+border: 1px solid #FF0000;
+border-radius: 3px 3px 3px 3px;
+box-shadow: 0 0 3px #E15353;
+clear: both;
+color: #FFFFFF;
+margin: 3px 0 0;
+padding: 3px 5px;
+position: relative;
+text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.35);
+display: none;
+}
+
+.guiform #canvas .error-message p{
+font-size: 12px;
+margin: 0;
+}
+
+.guiform #canvas .error-message .arrow {
+width: 30px;
+height: 10px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+bottom: -16px;
+margin-left: 0;
+}
+
+.guiform #canvas .error-message .arrow.top {
+top: -16px;
+bottom: auto;
+}
+
+.guiform #canvas .error-message .arrow.left {
+left: 0%;
+top: -10px;
+}
+
+.guiform #canvas .error-message .arrow:after {
+background: none repeat scroll 0 0 #E65E5E;
+border: 1px solid #FF0000;
+content: "";
+position: absolute;
+top: -20px;
+width: 20px;
+left: 10px;
+height: 20px;
+box-shadow: 6px 5px 9px -9px black;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+tranform: rotate(45deg);
+}
+
+.guiform #canvas .error-message .arrow.top:after {
+bottom: -14px;
+top: auto;
+z-index: 2;
+}
+
+.guiform #canvas .error{
+border: 1px solid red !important;
+}
+
+.guiform #canvas .folding .error{
+border: medium none !important;
+color: #FF0000;
+}
+
+.guiform #canvas input.error,
+.guiform #canvas select.error,
+.guiform #canvas textarea.error,
+.guiform #canvas .guif-dropzone.error{
+border: 1px solid #E15353;
+box-shadow: 0 0 3px #E15353;
+background: #FFD5D6;
+text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.guiform #canvas p.error{
+color: red;
+border: none;
+padding-top: 5px;
+clear: both;
+}
+
+.guiform #canvas .error .ui-spinner-button{
+border-left: 1px solid red;	
+}
+
+.ui-buttonset.error .ui-state-default, 
+.ui-buttonset.error .ui-widget-content .ui-state-default, 
+.ui-buttonset.error .ui-widget-header .ui-state-default{
+border: 1px solid #E15353;
+box-shadow: 0 0 3px #E15353;	
+}
+
+.guiform #canvas .ui-spinner.error{
+box-shadow: 0 0 3px #E15353;
+background: #FFD5D6 	
+}
+
+.guiform #canvas .ui-buttonset.error,
+.guiform #canvas .ui-spinner-input.error{
+border: none;	
+box-shadow: none;
+}
+
+
+
+/*- IMPORTANT DO NOT REMOVE -------------------*/
+.guiform #canvas .item{
+float: none;
+clear: both;
+list-style: none outside none;	
+cursor: move;
+clear: both;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+.guiform #canvas .item .has-success input[type="text"],
+.guiform #canvas .item .has-error input[type="text"]{
+padding-right: 36px;
+}
+/*- END IMPORTANT DO NOT REMOVE -------------------*/
+
+
+.guiform #canvas .ui-sortable{
+background: none;
+border: none;
+display: inherit;
+list-style: none outside none;
+}
+
+.guiform #canvas .ui-sortable .ui-sortable{
+padding: 0;
+min-height: auto;
+min-height: auto;
+}
+
+.guiform #canvas .ui-sortable ul.folding{
+display: inline-table;
+width: 100%;
+
+}
+
+
+.guiform #canvas .ui-sortable .item.ui-state-highlight{
+background: #F8FFF0;
+border: 1px dashed green;
+color: #363636;
+position: relative;
+z-index: 0;
+padding: 5px 15px;
+}
+
+
+.guiform #canvas .ui-sortable .item.hide-label .label{
+display: none;
+}
+
+
+/*- Alignment -------------*/
+.guiform #canvas .item .align-right,
+.guiform #canvas .item.align-right{
+text-align: right;
+}
+
+.guiform #canvas .item.align-left,
+.guiform #canvas .item .align-top,
+.guiform #canvas .item .align-left{
+text-align: left;
+}
+
+.guiform #canvas .item .align-center,
+.guiform #canvas .item.align-center{
+text-align: center;
+}
+
+.guiform #canvas .item .align-justify,
+.guiform #canvas .item.align-justify{
+text-align: justify;
+}
+
+
+.guiform #canvas .selected{
+background: #FFFBCC;
+width: auto;
+}
+
+
+.guiform #canvas .item .label{
+display: inline-block;
+float: left;
+padding-right: 1%;
+font-weight: bold;
+line-height: 23px;
+width: 150px;
+font-size: 14px;
+}
+
+.guiform #canvas .item .label span{
+margin-left: 2px;
+}
+
+/*-- BEGIN f_list style --*/
+.guiform #canvas .f_list li{
+padding: 3px 0;
+}
+
+.guiform #canvas .f_list li a{
+color:#0074A2;
+text-decoration: none;
+}
+
+.guiform #canvas .f_list li a:hover{
+color: blue;
+text-decoration: underline;
+}
+
+.guiform #canvas .f_list ul{
+list-style-type: disc;
+list-style-position: outside;
+padding-left: 35px;
+}
+
+.guiform #canvas .f_list ul.disc{
+list-style-type: disc;
+}
+
+.guiform #canvas .f_list ul.square{
+list-style-type: square;
+}
+
+.guiform #canvas .f_list ul.circle{
+list-style-type: circle;
+}
+
+.guiform #canvas .f_list ul.decimal{
+list-style-type: decimal;
+}
+
+.guiform #canvas .f_list ul.decimal-leading-zero{
+list-style-type: decimal-leading-zero;
+}
+
+.guiform #canvas .f_list ul.lower-roman{
+list-style-type: lower-roman;
+}
+
+.guiform #canvas .f_list ul.upper-roman{
+list-style-type: upper-roman;
+}
+
+.guiform #canvas .f_list ul.lower-greek{
+list-style-type: lower-greek;
+}
+
+.guiform #canvas .f_list ul.lower-alpha{
+list-style-type: lower-alpha;
+}
+
+.guiform #canvas .f_list ul.upper-alpha{
+list-style-type: upper-alpha;
+}
+
+.guiform #canvas .f_list ul.hiragana{
+list-style-type: hiragana;
+}
+
+.guiform #canvas .f_list ul.katakana{
+list-style-type: katakana;
+}
+
+
+.guiform #canvas .f_divider hr{
+border-top: 2px solid #CCCCCC;
+border-bottom: medium none;
+}
+
+/*-- END f_list style --*/
+
+
+.guiform #canvas .f_heading h1 { font-size: 36px; margin: 0; padding: 0; line-height: normal; }
+.guiform #canvas .f_heading h2 { font-size: 30px; margin: 0; padding: 0; line-height: normal; }
+.guiform #canvas .f_heading h3 { font-size: 24px; margin: 0; padding: 0; line-height: normal; }
+.guiform #canvas .f_heading h4 { font-size: 18px; margin: 0; padding: 0; line-height: normal; }
+.guiform #canvas .f_heading h5 { font-size: 14px; margin: 0; padding: 0; line-height: normal; }
+.guiform #canvas .f_heading h6 { font-size: 12px; margin: 0; padding: 0; line-height: normal; }
+
+ 
+
+.guiform #canvas .f_paragraph p{
+margin: 0 0 13px;
+line-height: 20px;
+font-size: 14px;
+}
+
+.guiform #canvas .f_paragraph p:last-of-type{
+margin-bottom: 0;
+}
+
+.guiform #canvas .button-wrap{
+	text-align: right;
+}
+
+/*-- BEGIN f_custom_field style --*/
+.guiform #canvas .f_custom_field .group-prefix{
+font-size: 21px;
+padding: 5px 12px;
+}
+
+.guiform #canvas .group-prefix,
+.guiform #canvas .group-postfix{
+font-size: 18px;
+min-width: 24px;
+}
+
+.guiform #canvas .form-group-lg .group-prefix,
+.guiform #canvas .form-group-lg .group-postfix{
+font-size: 24px;
+min-width: 50px;
+}
+
+.guiform #canvas .form-group-sm .group-prefix,
+.guiform #canvas .form-group-sm .group-postfix{
+font-size: 14px;
+min-width: 16px;
+}
+
+/*-- END ---------------------------------------*/
+
+/*-- BEGIN f_radio_wrap f_checkbox_wrap style --*/
+.guiform #canvas .wrap{
+margin: 0;
+}
+
+.guiform #canvas .f_checkbox .col,
+.guiform #canvas .f_radio .col{
+padding-left: 0;
+}
+
+
+.guiform #canvas .f_checkbox .col:last-child,
+.guiform #canvas .f_radio .col:last-child{
+padding-right: 0;
+}
+
+.guiform #canvas .f_checkbox .wrap label,
+.guiform #canvas .f_radio .wrap label{
+font-size:	14px;
+padding-left: 0 0 0 20px;
+}
+
+.guiform #canvas .f_checkbox input,
+.guiform #canvas .f_radio input{
+margin: 2px 0px 0 -20px;
+}
+
+.guiform #canvas .f_custom_checkbox .prettycheckbox label,
+.guiform #canvas .f_custom_radio .prettyradio label{
+font-size: 14px;
+padding: 0;
+margin: 6px 5px;
+}
+
+
+.guiform #canvas .f_custom_checkbox .col,
+.guiform #canvas .f_custom_radio .col{
+padding-left: 0;
+}
+
+.guiform #canvas .f_custom_checkbox .col:last-child,
+.guiform #canvas .f_custom_radio .col:last-child{
+padding-right: 0;
+}
+
+
+/*-- END f_radio_wrap f_checkbox_wrap style --*/
+
+/*-- BEGIN f_folding style --*/
+
+.guiform #canvas .f_folding h1{
+font-size: 18px;
+padding: 10px 5px;
+}
+
+.guiform #canvas .f_folding span{
+display: inline-block;
+margin: 0 10px 0 0;
+}
+
+.guiform #canvas .item.f_folding{
+padding: 5px 0;
+}
+
+/*-- END f_folding style --*/
+
+/*-- BEGIN f_text_captcha style --*/
+
+.guiform #canvas .f_text_captcha .input-group-addon{
+padding: 0px;
+line-height: 0;
+}
+
+.guiform #canvas .f_text_captcha .input-group-addon img{
+height: 32px;
+width: 88px;
+}
+
+.guiform #canvas .f_text_captcha .form-group-lg img{
+height: 44px;
+width: 115px;
+}
+
+.guiform #canvas .f_recaptcha_v1 #recaptcha_response_field{
+line-height: normal;
+}
+
+/*-- END f_text_captcha style --*/
+
+
+/*-- BEGIN Grid System Style --*/
+.guiform #canvas .item,
+.guiform #canvas .item .grid-sortable{
+border: 1px dashed transparent;
+}
+
+.guiform #canvas .item .grid-sortable .item{
+padding-right: 0px;
+padding-left: 0px;
+}
+
+
+.guiform #canvas .item.active,
+.guiform #canvas .item.active .grid-sortable{
+border: 1px dashed;
+}
+
+.guiform #canvas .f_grid_system{
+padding-left: 0;
+padding-right: 0;
+}
+
+.guiform #canvas .f_grid_system > .wrap,
+.guiform #canvas .f_grid_system .col{
+padding: 0;
+}
+
+.guiform #canvas .f_grid_system .col{
+padding: 0;
+}
+/*-- END Grid System Style --*/
+
+/*-- BEGIN Panel Style --*/
+
+.guiform #canvas .f_panel .panel,
+.guiform #canvas .f_panel .panel h3{
+margin: 0px;
+line-height: normal;
+}
+
+
+/*-- END Panel Style --*/
+
+.guiform #canvas .shrink .wrap .button label {
+display: inline-block;
+margin-left: 0;
+}
+
+.guiform #canvas .item .required{
+color: #FF0000;
+font-size: 13px;
+margin-left: 5px;
+vertical-align: top;
+}
+
+
+.guiform #canvas .f_color_picker input[type="text"]{
+display: inline-block !important;
+width: 154px;
+}
+
+.guiform #canvas .f_color_picker .sp-container.colorpicker{
+position: inherit !important;
+}
+
+.guiform #canvas input:focus,
+.guiform #canvas select:focus,
+.guiform #canvas textarea:focus{
+border: 1px solid #000000;
+color: #000000;
+}
+
+/*-- BEGIN f_hidden_textbox --*/
+
+.guiform .f_hidden_textbox{
+	display: none;
+}
+
+#GuiForm.form-builder .f_hidden_textbox,
+#GuiForm.form-builder .f_hidden_textbox .form-control{
+	background-color: #eee;
+}
+
+/*-- END f_hidden_textbox --*/
+
+
+/*-- BEGIN f_button --*/
+.guiform #canvas .f_button .ui-button-text{
+line-height: normal;
+font-weight: normal;
+font-size: 14px;
+}
+
+.guiform #canvas .f_button .ui-button{
+padding: 2px;
+}
+
+.guiform #canvas .f_button .ui-button-text .fa{
+line-height: normal;
+font-size: 18px;
+}
+
+.guiform #canvas .f_button .ui-buttonset{
+height: auto;
+margin-right: 0px;
+}
+
+/*-- EDN f_button --*/
+
+
+/*-- BEGIN f_spinner --*/
+.guiform #canvas .f_spinner input:focus{
+border: none;
+}
+
+.guiform #canvas .f_spinner .ui-spinner-input{
+max-width: 85%;
+padding: 3px;
+}
+
+.guiform #canvas .f_spinner .col-sm-2 .ui-spinner-input{
+max-width: 58%;
+}
+
+.guiform #canvas .f_spinner .col-sm-3 .ui-spinner-input{
+max-width: 67%;
+}
+
+.guiform #canvas .f_spinner .col-sm-4 .ui-spinner-input{
+max-width: 76%;
+}
+
+.guiform #canvas .f_spinner .col-sm-5 .ui-spinner-input{
+max-width: 83%;
+}
+
+.guiform #canvas .f_spinner .col-sm-6 .ui-spinner-input{
+max-width: 86%;
+}
+
+.guiform #canvas .f_spinner .ui-widget-content{
+max-width: 100%;
+}
+
+/*-- End f_spinner --*/
+
+.guiform #canvas .f_select option{
+padding: 4px 15px;
+}
+
+
+/*-- BEGIN f_file --*/
+
+
+.guiform #canvas .f_file .btn-file,
+.guiform #canvas .f_custom_file .btn-file{
+position: relative;
+overflow: hidden;
+}
+
+.guiform #canvas .f_file .btn-file input[type=file],
+.guiform #canvas .f_custom_file .btn-file input[type=file]{
+position: absolute;
+top: 0;
+right: 0;
+min-width: 100%;
+min-height: 100%;
+font-size: 100px;
+text-align: right;
+filter: alpha(opacity=0);
+opacity: 0;
+outline: none;
+background: white;
+cursor: inherit;
+display: block;
+}
+
+.guiform #canvas .f_file .form-control[type=text],
+.guiform #canvas .f_custom_file .form-control[type=text]{
+background-color: #FFFFFF;
+}
+
+.guiform #canvas .f_file .form-control{
+-webkit-border-bottom-right-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-bottom-right-radius: 4px;
+-moz-border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+border-top-right-radius: 4px;
+}
+ 
+/*-- END f_file style --*/
+
+/*-- START f_slider style --*/
+.guiform #canvas .f_slider input{
+color: #F6931F;
+font-weight: bold;
+text-align: right;
+padding: 0 10px;
+border: none;
+background: transparent;
+}
+
+.guiform #canvas .f_slider .slider-text{
+font-size: 11px;
+letter-spacing: normal;	
+}
+
+.guiform #canvas .f_slider strong{
+color: #FF8000;
+}
+
+
+
+/*-- BEGIN f_page_break style --*/
+
+.guiform #canvas .page-content{
+display: none;
+}
+
+.guiform #canvas .page-content.page-active{
+display: block;
+}
+
+.guiform #canvas .page-content .f_page_break{
+padding-right: 0px;
+padding-left: 0px;
+}
+
+.guiform #canvas .form-group .page-next{
+float: right;
+}
+
+.guiform #canvas .page-content.page-active:first-child > .f_page_break .page-back{
+display: none;
+}
+
+.guiform #canvas .page-content:last-of-type > .f_page_break .page-next{
+display: none;
+}
+
+/*-- END f_page_break style --*/
+
+
+.guiform #canvas .f_alert .alert{
+	margin: 0;	
+}
+
+/*-- End f_alert style --*/
+
+
+/*-- BEGIN f_callout style --*/
+
+.guiform #canvas .callout {
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: #eee;
+border-image: none;
+border-radius: 3px;
+border-style: solid;
+border-width: 1px 1px 1px 5px;
+padding: 20px;
+}
+
+.guiform #canvas .callout h4 {
+margin-bottom: 5px;
+margin-top: 0;
+font-size: 18px;
+line-height: normal;
+}
+
+.guiform #canvas .callout p {
+margin-bottom: 5px;
+margin-top: 0;
+}
+
+.guiform #canvas .callout p:last-child {
+margin-bottom: 0;
+}
+.guiform #canvas .callout code {
+border-radius: 3px;
+}
+.guiform #canvas .callout + .callout {
+margin-top: -5px;
+}
+.guiform #canvas .callout-success {
+border-left-color: #d9534f;
+}
+.guiform #canvas .callout-success h4 {
+color: #d9534f;
+}
+.guiform #canvas .callout-danger {
+border-left-color: #d9534f;
+}
+.guiform #canvas .callout-danger h4 {
+color: #d9534f;
+}
+.guiform #canvas .callout-warning {
+border-left-color: #f0ad4e;
+}
+.guiform #canvas .callout-warning h4 {
+color: #f0ad4e;
+}
+.guiform #canvas .callout-info {
+border-left-color: #5bc0de;
+}
+.guiform #canvas .callout-info h4 {
+color: #5bc0de;
+}
+.guiform #canvas .callout-success {
+border-left-color: #3c763d;
+}
+.guiform #canvas .callout-success h4 {
+color: #3c763d;
+}
+/*-- End f_callout style --*/
+
+
+
+/*-- BEGIN f_image style --*/
+
+
+.guiform #canvas .f_image .thumbnail{
+margin: 0;
+}
+
+.guiform #canvas .f_image img{
+width: 100%;
+}
+
+.guiform #canvas .f_image .thumbnail h3{
+font-size: 24px;
+}
+
+.guiform #canvas .f_image .caption h1, 
+.guiform #canvas .f_image .caption h2, 
+.guiform #canvas .f_image .caption h3 {
+margin: 10px 0;
+}
+
+.guiform #canvas .f_image .caption h1{
+  font-size: 36px;
+}
+.guiform #canvas .f_image .caption h2{
+  font-size: 30px;
+}
+.guiform #canvas .f_image .caption h3{
+  font-size: 24px;
+}
+
+/*-- END f_image style --*/
+
+.guiform #canvas .ui-datepicker-buttonpane button{
+margin: 5px;
+}
+
+.guiform #canvas .ui_tpicker_timezone select{
+padding: 1px;
+}
+
+.guiform #canvas button{
+padding: 8px 18.5px;
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#canvas button{
+		padding: 8px 21.5px;
+	}
+}
+
+/* Opera */
+doesnotexist:-o-prefocus, #canvas button{
+padding: 8px 22.5px;
+}
+
+.guiform #canvas .control-label{
+font-weight: normal;
+color: #333;
+padding-bottom: 0;
+margin-bottom: 5px;
+}
+
+.guiform #canvas .control-label.font-bold,
+.guiform #canvas .f_panel .font-bold{
+font-weight: bold;
+}
+
+.guiform #canvas  .control-label.font-italic,
+.guiform #canvas  .f_panel .font-italic{
+font-style: italic;
+}
+
+.guiform #canvas .control-label.display-none{
+display: none;
+}
+
+.guiform #canvas .display-invisible{
+visibility: hidden;
+}
+
+.guiform #canvas textarea{
+position: relative;
+z-index: 0;
+height: 150px;
+overflow: auto;
+min-height: 100px;
+resize: vertical;
+}
+
+.guiform #canvas .f_paragraph .wrap,
+.guiform #canvas .f_heading .wrap,
+.guiform #canvas .f_list .wrap{
+display: block !important;
+float: none !important;
+}
+
+.guiform #canvas .short-description{
+font-family: "Open Sans";
+font-size: 12px;
+letter-spacing: 1px;
+margin-top: 5px;
+}
+
+.guiform #canvas .ui-spinner-input{
+border: medium none;
+padding: 3px 20px 3px 3px;
+background-color: #FFFFFF;
+}
+/*------------------------ End canvas ----------------------------------------*/
+
+
+/*------------------------ Start Bootstrap Canvas ----------------------------------------*/
+
+.guiform #canvas .col-sm-12{
+padding-right: 0;
+padding-left: 0;
+}
+
+
+.guiform #canvas .f_radio .wrap .form-control-feedback,
+.guiform #canvas .f_checkbox .wrap .form-control-feedback{
+right: 0px;
+}
+
+.guiform #canvas .form-group {
+margin-bottom: 0;
+}
+
+.guiform .col-xs-15,
+.guiform .col-sm-15,
+.guiform .col-md-15,
+.guiform .col-lg-15 {
+position: relative;
+min-height: 1px;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.guiform .col-xs-15 {
+width: 20%;
+float: left;
+}
+
+@media (min-width: 360px) {
+	.guiform .col-md-15 {
+      width: 20%;	
+      float: left;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1200px) {
+	.guiform .col-md-15 {
+      width: 20%;
+      float: left;
+  }
+  
+  .guiform .col-md-15 .control-label,
+  .guiform .col-md-15 .wrap{
+  	width: 100%;
+  } 
+}
+
+
+.guiform #canvas .input-group .form-control{
+	z-index: 0;
+}
+
+.guiform #canvas .btn-primary:hover,
+.guiform #canvas .btn-primary:focus,
+.guiform #canvas .btn-primary.active{
+color: #fff;
+background: #3071a9;
+}
+
+.guiform #canvas .btn-warning:hover,
+.guiform #canvas .btn-warning:focus,
+.guiform #canvas .btn-warning:active{
+color: #fff;
+background: #ec971f;
+}
+
+.guiform #canvas .btn-info:hover,
+.guiform #canvas .btn-info:focus,
+.guiform #canvas .btn-info:active{
+color: #fff;
+background: #31b0d5;
+}
+
+.guiform #canvas .btn-default:hover,
+.guiform #canvas .btn-default:focus,
+.guiform #canvas .btn-default:active{
+color: #333;
+background: #adadad;
+}
+
+/*------------------------ End Bootstrap Canvas ----------------------------------------*/
+
+
+
+/*------------------------ Start frontend css ----------------------------------------*/
+
+form.GuiForm .item.none{
+	display: none;
+}
+
+form.GuiForm .item.hidden{
+	visibility: hidden;
+}
+
+/*------------------------ End frontend css ----------------------------------------*/
+
+
+.guiform #containment{
+margin: 0px;
+padding: 10px;
+border: medium none;
+}
+
+.guiform #canvas{
+height: auto !important;
+margin: auto;
+width: 100%;
+}
+
+.guiform.form-builder #canvas{
+margin: 0 490px 0 0;
+width: 480px;
+}
+
+.guiform #canvas #sortable{
+margin: 0px !important;
+padding: 0px !important;
+list-style: none outside none;
+}
+
+.guiform #canvas .item{
+cursor: inherit;
+}
+
+.guiform #canvas .item:hover{
+cursor: inherit;
+}
+

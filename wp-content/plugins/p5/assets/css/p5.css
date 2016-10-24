@@ -1,0 +1,11 @@
+/* Hide default WordPress password input */
+#password-span {display:none !important}
+
+/* Plugin CSS */
+#p5-section ul#p5_postpasswords {margin-top:0}
+#p5-section ul#p5_postpasswords li.p5_postpassword {border-top: 1px dashed #dfdfdf; padding: 8px 0 8px 0; margin: 0; clear:both}
+#p5-section ul#p5_postpasswords li.p5_postpassword:first-child {border-top:none}
+#p5-section ul#p5_postpasswords li.p5_postpassword a.p5_delete_password img {vertical-align: middle}
+#p5-section ul#p5_postpasswords li.p5_postpassword a.p5-remove-date{white-space: nowrap}
+#p5-section ul#p5_postpasswords li.p5_postpassword a.p5-remove-date.hide {display:none}
+#p5-section #p5-section-footer {text-align:right}

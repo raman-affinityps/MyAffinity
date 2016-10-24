@@ -1,0 +1,1074 @@
+
+/*
+// +----------------------------------------------------------------------+
+// | Copyright 2013 GuiForm (email : info@guiform.com)                      |
+// +----------------------------------------------------------------------+
+// | This program is free software; you can redistribute it and/or modify |
+// | it under the terms of the GNU General Public License, version 2, as  |
+// | published by the Free Software Foundation.                           |
+// |                                                                      |
+// | This program is distributed in the hope that it will be useful,      |
+// | but WITHOUT ANY WARRANTY; without even the implied warranty of       |
+// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the        |
+// | GNU General Public License for more details.                         |
+// |                                                                      |
+// | You should have received a copy of the GNU General Public License    |
+// | along with this program; if not, write to the Free Software          |
+// | Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,               |
+// | MA 02110-1301 USA                                                    |
+// +----------------------------------------------------------------------+
+// | Author: Russell Pabon <russellpabon@guiform.com>                     |
+// +----------------------------------------------------------------------+
+*/
+
+*{
+	outline: medium none !important;
+}
+
+.clearfix:after{ 
+content: "\00A0"; 
+display: block; 
+clear: both; 
+visibility: hidden; 
+line-height: 0; 
+height: 0;
+width:0;
+font-size: 0px;
+}
+
+.clearfix{ 
+display: inline-block;
+}
+
+html[xmlns] .clearfix { 
+display: block;
+}
+
+* html .clearfix{ 
+height: 1%;
+}
+
+.clearfix {
+display: block;
+zoom: 1; 
+}
+
+
+.float{
+float: left;
+}
+
+.wrap,
+#settings{
+margin-top: 40px;
+width: 99%;	
+}
+
+#screen-options-wrap.hidden{
+display: block !important;
+visibility: visible !important
+}
+
+
+#settings .wrap{
+margin: 0;
+}
+
+
+.inline-edit-row fieldset label, 
+.inline-edit-row fieldset span.inline-edit-categories-label {
+display: block;
+margin: 15px 0;
+}
+
+.inline-edit-row fieldset label span.title{
+width: 150px;
+}
+
+.inline-edit-row fieldset label span.input-text-wrap{
+margin-left: 150px;
+}
+
+.inline-edit-row .input-text-wrap input[type="text"],
+.inline-edit-row .input-text-wrap select{
+width: 285px;
+}
+
+.inline-edit-row .input-text-wrap input.port{
+width: 100px;
+}
+
+
+/*------------------------ Start Jquery UI ----------------------------------------*/
+
+.ui-datepicker {
+padding: 1px;
+width: 250px;
+z-index: 2 !important;
+}
+
+
+
+.ui-datepicker table {
+margin: 0;
+}
+
+.ui-datepicker-multi{
+width: auto !important;
+}
+
+
+.ui-datepicker-multi .ui-datepicker-group table {
+width: 100%;
+}
+
+.ui-datepicker .ui-datepicker-header,
+.ui-datepicker .ui-timepicker-div .ui-widget-header{
+background: none repeat scroll 0 0 #EC6A38;
+border-radius: 5px 5px 0 0;
+color: #FFFFFF;
+padding: 6px 0;
+position: relative;
+ height: auto;
+}
+
+.ui-datepicker .ui-datepicker-title {
+font-size: 14px;
+font-weight: 700;
+line-height: 26px;
+text-align: center;
+}
+
+
+.ui-datepicker .ui-datepicker-prev span {
+background: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI3cHgiIGhlaWdodD0iMTFweCIgdmlld0JveD0iMCAwIDcgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcgMTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNMC40MDYsNC41NTdDMC40MTIsNC41NTEsMC40Miw0LjU1LDAuNDI2LDQuNTQ0DQoJCQljMC4wMDEtMC4wMDEsMC4wMDEtMC4wMDIsMC4wMDItMC4wMDNMNC41OSwwLjQxMWMwLjU0Ny0wLjUzNywxLjQzNC0wLjUzNywxLjk4LDBjMC41NDcsMC41MzcsMC41NDcsMS40MDgsMCwxLjk0NUwzLjM3OSw1LjUyMg0KCQkJbDMuMjEyLDMuMTIzYzAuNTQ3LDAuNTM2LDAuNTQ3LDEuNDA3LDAsMS45NDRzLTEuNDM0LDAuNTM3LTEuOTgsMEwwLjQwNiw2LjUwMkMtMC4xNDEsNS45NjUtMC4xNDEsNS4wOTQsMC40MDYsNC41NTd6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+.ui-datepicker .ui-datepicker-next {
+right: 10px;
+}
+.ui-datepicker .ui-datepicker-next span {
+background: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI3cHgiIGhlaWdodD0iMTFweCIgdmlld0JveD0iMCAwIDcgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcgMTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNNi41OTIsNC41NTdDNi41ODYsNC41NTEsNi41NzgsNC41NSw2LjU3Miw0LjU0NA0KCQkJQzYuNTcxLDQuNTQzLDYuNTcxLDQuNTQyLDYuNTcsNC41NDJMMi40MDgsMC40MTFjLTAuNTQ3LTAuNTM3LTEuNDMzLTAuNTM3LTEuOTc5LDBjLTAuNTQ3LDAuNTM3LTAuNTQ3LDEuNDA4LDAsMS45NDVsMy4xOSwzLjE2Nw0KCQkJTDAuNDA2LDguNjQ2Yy0wLjU0NiwwLjUzNi0wLjU0NiwxLjQwNywwLDEuOTQ0YzAuNTQ3LDAuNTM3LDEuNDM0LDAuNTM3LDEuOTgsMGw0LjIwNi00LjA4OEM3LjEzOSw1Ljk2NSw3LjEzOSw1LjA5NCw2LjU5Miw0LjU1N3oNCgkJCSIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+
+.ui-datepicker th {
+background: none repeat scroll 0 0 #F1F1EF;
+border: 0 none;
+color: #4F4F4B;
+font-size: 11px;
+height: 25px;
+padding: 0;
+text-align: center;
+text-transform: capitalize;
+}
+
+.ui-datepicker th span {
+display: block;
+line-height: 20px;
+padding-top: 3px;
+text-indent: 4px;
+}
+
+.ui-datepicker td {
+border: 1px solid #EFF1F2;
+padding: 0;
+vertical-align: top;
+}
+
+
+
+
+.ui-datepicker td a.ui-state-default{
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: 0 none;
+color: #504E47;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.ui-datepicker td a.ui-state-default:active,
+.ui-datepicker td a.ui-state-active{
+background: none repeat scroll 0 0 #00AEEC;
+border: 0 none;
+color: #FFFFFF;
+z-index: 2;
+}
+
+
+.ui-datepicker td.ui-datepicker-today a.ui-state-default{
+background-color: rgba(0, 0, 0, 0);
+color: #EB581F;
+}
+.ui-datepicker td.ui-datepicker-today a.ui-state-hover{
+box-shadow: 0 0 0 3px #FCF1C7 inset;
+}
+
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover{
+background: none;
+border: none;
+cursor: pointer;	
+}
+
+
+
+.ui-datepicker-nav, .ui-datepicker .ui-datepicker-prev, 
+.ui-datepicker .ui-datepicker-next {
+top: 7px;
+}
+
+body#GuiForm .ui-datepicker .ui-datepicker-prev, 
+body#GuiForm .ui-datepicker .ui-datepicker-next {
+top: 4px;
+}
+
+
+.ui-datepicker .ui-datepicker-prev {
+left: 3px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+right: 3px;
+}
+
+.ui-datepicker .ui-datepicker-title select,
+#canvas .ui-datepicker .ui-datepicker-title select  {
+margin-right: 5px;
+width: 48%;
+font-weight: normal;
+height: 22px;
+padding: 0;
+}
+
+#canvas .ui-datepicker .ui-datepicker-header  {
+min-height: 40px;
+}
+
+#canvas .ui-datepicker .ui-datepicker-title select  {
+width: 47%;
+}
+
+#canvas .ui-datepicker-inline{
+	width: 100% !important;
+}
+
+
+.ui-datepicker .ui-datepicker-title select:last-of-type{
+margin-right: 0px;
+}
+
+.ui-datepicker td span, 
+.ui-datepicker td a{
+font-size: 13px;
+height: 25px;
+padding: 3px;
+text-align: center;
+width: auto;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+margin: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+font-size: 14px;
+}
+
+/*------------------------ END Jquery UI ----------------------------------------*/
+
+
+/*--------------START widefat table-----------------------------------*/
+.widefat thead th:last-of-type {
+width: 180px;
+}
+
+.widefat .check-column {
+text-align: center;
+width: 3%;
+}
+
+.widefat th input {
+margin: 0;
+}
+
+.widefat th.column-name{
+width: 200px;
+}
+
+.widefat th.column-font_family{
+width: 250px;
+}
+
+#wpbody-content .quick-edit-row-post .inline-edit-col-left,
+#wpbody-content .quick-edit-row-post .inline-edit-col-right,
+#wpbody-content .inline-edit-row-post .inline-edit-col-center {
+    width: 33% !important;
+}
+
+
+th.sortable a span, th.sorted a span,
+.widefat tfoot tr th, .widefat thead tr th {
+text-shadow: 0 0 1px #333;
+}
+
+
+/*------------------------ START lightbox ----------------------------------------*/
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+right: -28px !important;
+top: 28px;
+}
+
+/*------------------------ END lightbox ----------------------------------------*/
+
+#guiform-manager.forms th.sortable a, th.sorted a {
+display: block;
+overflow: hidden;
+padding: 7px 0 8px;
+}
+
+#guiform-manager.forms .widefat td, 
+#guiform-manager.forms .widefat th {
+padding: 8px 8px 8px 0;
+}
+
+#guiform-manager.forms th.column-cb{
+width: 2% !important;
+}
+
+#guiform-manager.forms th.column-new,
+#guiform-manager.forms th.column-unread,
+#guiform-manager.forms th.column-total,
+#guiform-manager.forms th.column-id{
+width: 3% !important;
+}
+
+#guiform-manager.forms th.column-new a,
+#guiform-manager.forms th.column-unread a,
+#guiform-manager.forms th.column-total a,
+#guiform-manager.forms th.column-id a{
+height: 66px;
+width: 20px;
+position: relative;
+}
+
+#guiform-manager.forms th.column-new .sorting-indicator:before,
+#guiform-manager.forms th.column-unread .sorting-indicator:before,
+#guiform-manager.forms th.column-total .sorting-indicator:before,
+#guiform-manager.forms th.column-id .sorting-indicator:before{
+bottom: 3px;
+left: -3px;
+position: absolute;
+top: auto;
+}
+
+#guiform-manager.forms th.column-new span:first-child,
+#guiform-manager.forms th.column-unread span:first-child,
+#guiform-manager.forms th.column-total span:first-child,
+#guiform-manager.forms th.column-id span:first-child{
+color:#333;
+border:0px solid red;
+writing-mode:tb-rl;
+-webkit-transform:rotate(90deg);
+-moz-transform:rotate(90deg);
+-o-transform: rotate(90deg);
+white-space:nowrap;
+display:block;
+bottom:0;
+width:20px;
+display: block;
+font-weight:normal;
+text-shadow: 0px 0px 1px #333;
+}
+
+
+
+
+
+.metabox-prefs label[for=guiform_ip-hide],
+.metabox-prefs label[for=form_title-hide]{
+display: none;	
+}
+
+.tablenav-pages .current-page {
+padding-top: 3px;
+text-align: center;
+}
+
+#guiform-manager .meta-box-sortables .inside{
+padding: 0 12px;	
+}
+
+
+#guiform-manager .metabox-icons li{
+border-right: 1px solid #BBBBBB;
+cursor: pointer;
+display: inline-block;
+margin-bottom: 0;
+margin-right: 15px;
+padding-right: 15px;
+}
+
+#guiform-manager .metabox-icons li:last-of-type{
+border: none;
+}
+
+
+#guiform-manager .metabox-icons li.switch-form{
+float: right;
+margin: 0;
+padding: 0;
+width: 25%;
+}
+
+#guiform-manager .metabox-icons select{
+width: 100%;
+}
+
+#guiform-manager .metabox-icons li a {
+font-weight: bold;
+text-decoration: none;
+}
+
+#guiform-manager .metabox-icons li span {
+font-size: 22px;
+}
+
+#guiform-manager .metabox-icons li .icon {
+color: #464646;
+font-size: 22px;
+position: relative;
+color: #21759B;
+margin-right: 10px;
+}
+
+#guiform-manager .metabox-icons li:hover *{
+color:	#D54E21 !important;
+}
+
+#guiform-manager .nav-tab-wrapper{
+margin-bottom: 20px;
+}
+
+
+#guiform-manager .hide{
+display: none !important;
+}
+
+#guiform-manager .hidden{
+visible: hidden !important;
+}
+
+#guiform-manager #side-sortables #guiform_metaboxes-notification-header li{
+margin-right: 0px;
+padding: 10px 20px;
+width: 38%;
+display: inline-block;
+border: none;
+}
+
+#guiform-manager .post-image{
+margin: 0 4px;	
+}
+
+#guiform-manager .post-image li{
+list-style: disc outside none;
+}
+
+
+.hasPlaceholder{
+color: #CCCCCC !important;
+}
+
+input.error,
+select.error,
+textarea.error{
+	border: 1px solid red;
+}
+
+/*-- WP #the-list ---------------------------------*/
+
+.inline-edit-save .spinner {
+    padding: 0;
+}
+
+/*-- END WP #the-list ---------------------------------*/
+
+
+/*-------------- START floating list -----------------------------------*/
+
+.table-settings{
+background: none repeat scroll 0 0 #F6FBFD;
+border: 1px solid #0074A2;
+}
+
+
+.table-settings .column-left{
+padding: 10px;
+}
+
+
+.float-list{
+background: 	none repeat scroll 0 0 #ADD8E6
+}
+
+.float-list h3{
+background: none repeat scroll 0 0 #0074A2;
+color: #FFFFFF;
+font-weight: normal;
+margin: 0;
+padding: 8px 10px;
+}
+
+.float-list ul{
+margin: 0;
+max-height: 450px;
+overflow: auto;
+min-height: 450px;
+}
+
+.float-list li{
+border-bottom: 1px solid #0074A2;
+cursor: pointer;
+margin: 0;
+padding: 5px 10px;
+}
+
+
+.float-list li:hover {
+border-right-color: #F1F1F1;
+}
+
+.float-list li:last-of-type {
+border: none;
+}
+
+
+/*--------------END floating list -----------------------------------*/
+
+
+
+
+
+#wpbody-content #options-filter .bulk-edit-row-page .inline-edit-col-right {
+margin-left: 1.5%;
+width: 65%;
+}
+
+
+/*-- Forms Manager Page ---------------------------------*/
+
+#forms-filter #cb{
+	width: 3%;
+}
+
+#forms-filter #id{
+	width: 6%;
+}
+
+#forms-filter #new,
+#forms-filter #unread,
+#forms-filter #total{
+width: 5%;
+}
+
+#forms-filter #form_title{
+width: 25%;
+}
+
+#forms-filter #last_update,
+#forms-filter #created{
+	width: 10%;
+}
+
+
+/*-- END Forms Manager Page ---------------------------------*/
+
+
+#options-list{
+background: none repeat scroll 0 0 #E4E4E4;
+border: 1px solid #CCCCCC;
+margin-top: 15px;
+padding: 10px;
+width: 100%;
+}
+
+#options-list tr{
+border: 1px solid rgba(0, 0, 0, 0);
+margin-bottom: 5px;
+padding: 3px 10px 3px 3px;
+}
+
+#options-list [type="radio"] {
+height: 0;
+line-height: 0;
+margin: 0;
+min-width: 0;
+width: 0;
+}
+
+#options-list [type="text"] {
+padding: 1px;
+width: 100%;
+}
+
+#options-list td {
+padding: 3px 10px;
+text-align: center;
+background-color: #FAA732;
+background-image: linear-gradient(to bottom, #FBB450, #F89406);
+background-repeat: repeat-x;
+}
+
+#options-list thead td {
+font-weight: bold;
+background-color: #3DAF01;
+background-image: linear-gradient(to bottom, #3DAF01, #3DAF01);
+background-repeat: repeat-x;
+color: #FFFFFF;
+padding: 7px;
+}
+
+
+
+#options-list  tr.ui-state-highlight td{
+padding: 5.7px;	
+background: #FFFFFF;
+}
+
+#options-list  tr.ui-sortable-helper{
+height: auto !important;
+padding: 0;
+}
+
+#options-list span {
+color: #FFFFFF;
+cursor: pointer;
+display: inline-table;
+font-size: 20px;
+text-align: center;
+text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.35);
+vertical-align: middle;
+}
+
+#options-list .delete:hover{
+color: #FF0000;
+}
+#options-list .add:hover{
+color: #008000;
+}
+#options-list .move:hover{
+color: #005DFE;
+cursor: pointer;
+}
+
+
+/*- Settings backup page -----------------------------------------------------*/
+
+#settings-backup{
+	
+}
+
+
+#settings-backup li{
+display: inline-block;
+margin-right: 1%;
+width: 23.5%;
+}
+
+
+
+/*-------------- Start Notification Form Settings -----------------------------------*/
+
+#guiform-manager.form-notification .table-settings{
+background: none repeat scroll 0 0 #F6FBFD;
+border-color: #0074A2 #0074A2 -moz-use-text-color -moz-use-text-color;
+border-image: none;
+border-style: solid solid none none;
+border-width: 1px 1px medium medium;
+}
+
+#guiform-manager.form-notification .border-left {
+border-left: 1px solid #0074A2;
+}
+
+#guiform-manager.form-notification .border-bottom {
+border-bottom: 1px solid #0074A2;
+}
+
+#guiform-manager.form-notification input[type="text"],
+#guiform-manager.form-notification .table-settings select{
+width: 100%;
+}
+
+#guiform-manager.form-notification .col-remove{
+width: 45px;
+text-align: right;
+}
+
+#guiform-manager.form-notification .column-right {
+text-align: right;
+width: 55px;
+}
+
+#guiform-manager.form-notification .column-attachment {
+padding: 10px;
+vertical-align: top;
+width: 35%;
+}
+
+#guiform-manager.form-notification #attachment-item{
+margin-bottom: 10px;
+}
+
+#guiform-manager.form-notification #attachment-item .panel-title{
+padding: 0;
+font-weight: bold;
+}
+
+#guiform-manager.form-notification #attachment-item .panel-body{
+max-height: 100px;
+min-height: 100px;
+overflow: auto;
+}
+
+#guiform-manager.form-notification #attachment-item .item{
+margin-bottom: 10px;
+}
+
+#guiform-manager.form-notification #attachment-item .item .label{
+display: block;
+max-width: 75%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+#guiform-manager.form-notification #rule-content .rules{
+margin-top: 15px;
+}
+
+#guiform-manager.form-notification #rule-content .rules:first-child{
+margin-top: 0;
+}
+
+#guiform-manager.form-notification #rule-content .dropdown-toggle,
+#guiform-manager.form-notification .panel-footer .dropdown-toggle{
+border-radius: 0;
+}
+
+#guiform-manager.form-notification .dropdown-menu li{
+margin: 0;
+}
+
+
+/*-------------- END Notification Form Settings -----------------------------------*/
+
+
+/*-------------- START Confirmation Form Settings -----------------------------------*/
+
+#guiform-manager.form-confirmation .table-settings{
+background: none repeat scroll 0 0 #F6FBFD;
+border-color: #0074A2 #0074A2 -moz-use-text-color -moz-use-text-color;
+border-image: none;
+border-style: solid solid none none;
+border-width: 1px 1px medium medium;
+}
+
+
+#guiform-manager.form-confirmation .border-left {
+border-left: 1px solid #0074A2;
+}
+
+
+#guiform-manager.form-confirmation .border-bottom {
+border-bottom: 1px solid #0074A2;
+ vertical-align: top; 
+}
+
+#guiform-manager.form-confirmation .column-right {
+    text-align: right;
+    width: 90px;
+}
+
+#guiform-manager.form-confirmation input[type="text"], 
+#guiform-manager.form-confirmation select,
+#guiform-manager.form-confirmation textarea{
+    width: 100%;
+}
+
+#guiform-manager.form-confirmation textarea{
+height: 207px;
+resize: vertical;
+min-height: 300px;
+}
+
+
+#guiform-manager.form-confirmation .border-bottom p {
+margin: 0;
+}
+
+/*-------------- END Notification Form Settings -----------------------------------*/
+
+
+/*-------------- START Entry Manager Page -----------------------------------*/
+#guiform-manager.entry-manager {
+
+}
+
+#guiform-manager.entry-manager tr.unread {
+font-weight: bold;
+}
+
+#entry-list{
+max-height: 350px;
+overflow: auto;
+padding: 10px;
+}
+
+#entry-list li{
+margin: 0;
+padding: 5px 3px;
+}
+
+#entry-list label{
+display: block;
+cursor: move;
+}
+
+
+#entry-list li:hover{
+background-color: #3DAF01;
+cursor: move;
+}
+
+/*-------------- END Entry Manager Page -----------------------------------*/
+
+/*-------------- START View Entry Page -----------------------------------*/
+#guiform.metabox-holder #container-1{
+clear: both;
+display: block;
+width: 100%;
+}
+
+#guiform.metabox-holder #container-2{
+margin-right: 1.5%;
+width: 70%;
+}
+
+#guiform.metabox-holder #container-3{
+width: 28.5%;
+}
+  
+#guiform.metabox-holder .meta-box-sortables{
+/*	min-height: 67px; */
+}
+
+#guiform.metabox-holder.columns-1 .postbox-container{
+clear: both;
+display: block;
+width: 100% !important;
+}
+
+
+
+#guiform-manager #guiform-metaboxes-entry .inside{
+padding: 15px;
+}
+
+#guiform-metaboxes-entry table{
+width: 100%;
+display: table;
+border: medium none;
+}
+
+#guiform-metaboxes-entry tr:last-child td{
+border: none;
+}
+
+#guiform-metaboxes-entry ul,
+#guiform-metaboxes-entry li{
+margin: 0;
+}
+
+#guiform-metaboxes-entry li{
+line-height: 25px;
+padding: 0 5px;
+}
+
+#guiform-metaboxes-entry li:last-child{
+margin: 0;
+}
+
+#guiform-metaboxes-entry li:hover{
+background-color: #CCCCCC;
+}
+
+
+#guiform-metaboxes-entry .label td{
+font-weight: bold;
+padding: 7px 7px 7px 20px;
+background-color: #F7F7F7;
+}
+
+#guiform-metaboxes-entry .value td{
+padding: 7px 7px 7px 40px;
+background-color: #FFFFFF ;
+}
+
+#guiform-manager.view-entry{
+position: relative;
+}
+
+#guiform-manager.view-entry .button-wrap{
+text-align: right;
+}
+
+#guiform-manager.view-entry .guif-size{
+display: inline-block;
+font-size: 14px;
+margin: 6px;
+}
+
+#guiform-manager.view-entry .guif-size strong{
+color: #E34848;
+}
+
+#guiform-manager.view-entry .button-wrap a span{
+font-size: 18px;
+padding: 0 10px;
+}
+
+#guiform-manager.view-entry .button-wrap a span:hover{
+color: #E34848;
+}
+
+#guiform-manager.view-entry .download{
+float: right;
+color: red;
+cursor: pointer;
+}
+
+/*-------------- END View Entry Page -----------------------------------*/
+
+
+/*-------------- Start Options Page -----------------------------------*/
+
+#guiform-manager.options .grid-sortable .input-group,
+#guiform-manager.options .grid-sortable .ui-state-highlight{
+margin-bottom: 5px;
+left: auto !important;
+}
+
+#guiform-manager.options .grid-sortable .input-group:last-child,
+#guiform-manager.options .grid-sortable .ui-state-highlight:last-child{
+margin-bottom: 0;
+}
+
+#guiform-manager.options .grid-sortable .ui-state-highlight{
+background: none repeat scroll 0 0 #e0d783;
+}
+
+#guiform-manager.options .input-group-addon{
+cursor: pointer;
+}
+
+#guiform-manager.options .panel-heading .form-control{
+width: 35%; 
+border: medium none; 
+box-shadow: none; 
+height: auto; 
+font-weight: bold;
+}
+/*-------------- End Options Page -----------------------------------*/
+
+
+/*--------------Export Page-----------------------------------*/
+#guiform-manager.export select{
+width: 100%;
+}
+
+#guiform-manager.export .loader{
+ padding: 0 5px;
+ display: none;
+}
+
+#guiform-manager.export .display-fields img{
+display: none;
+}
+
+#guiform-manager.export .row-button{
+visibility: hidden;
+}
+
+#guiform-manager.export .display-fields{
+background-color: #F2F2F2;
+height: 300px;
+overflow-y: auto;
+padding: 10px;
+width: 98%;
+position: relative;
+}
+
+#guiform-manager.export .display-fields img{
+left: 48%;
+position: absolute;
+top: 43%;
+}
+
+#guiform-manager.export label{
+display: block;
+}
+
+#guiform-manager.export ul{
+margin: 0px;
+}
+
+#guiform-manager.export ul i{
+color: #909090;
+}
+
+#guiform-manager.export input[type="file"] {
+vertical-align: top;
+}
+
+#import-data img{
+display: none;
+}
+
+
+/*-------------- Start Extension Page-----------------------------------*/
+
+#guiform-manager.extension .item{
+background: none repeat scroll 0 0 #fff;
+border: 1px solid #e5e5e5;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+height: 360px;
+max-width: 360px;
+padding: 10px;
+position: relative;
+width: 90%;
+margin: 0 15px 15px 0;
+}
+
+#guiform-manager.extension .item a{
+text-decoration: none;
+}
+
+#guiform-manager.extension .item img{
+max-width: 360px;
+width: 100%;
+}
+
+#guiform-manager.extension .item .button-primary{
+bottom: 10px;
+position: absolute;
+}
+
+#guiform-manager.extension .item .more-link{
+display: none;
+}
+
+
+
+/*-------------- End Extension Page-----------------------------------*/

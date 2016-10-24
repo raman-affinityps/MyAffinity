@@ -1,0 +1,140 @@
+<?php
+/**
+ * This template displays full width pages.
+ *
+ * @package vantage
+ * @since vantage 1.0
+ * @license GPL 2.0
+ * 
+ * Template Name: Affiliate Dashboard Page
+ */
+
+get_header();
+
+$user = wp_get_current_user();
+
+$_SESSION['start_date'] = '2016-02-01';
+$_SESSION['end_date'] = '2016-03-01';
+
+?>
+
+<script>
+         $(function() { $("#e1").daterangepicker(); });
+</script>
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'content', 'page' ); ?>
+
+				<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
+					<?php comments_template( '', true ); ?>
+				<?php endif; ?>
+
+			<?php endwhile; // end of the loop. ?>
+
+			<div id="tab_container">
+
+			<ul id="myTab" role="tablist" class="wpsm_nav wpsm_nav-tabs">
+
+				<li class="active" role="presentation">
+					<a data-toggle="tab" role="tab" aria-controls="tabs_desc_1" href="#tabs_desc_1" aria-expanded="true"><i class="fa fa-globe"></i> <span>Site Stats</span>
+						</a>
+				</li>
+
+				<li role="presentation" class="">
+					<a data-toggle="tab" role="tab" aria-controls="tabs_desc_2" href="#tabs_desc_2" aria-expanded="false"><i class="fa fa-columns"></i><span>Leads</span>
+					</a>
+				</li>
+
+				<li role="presentation" class="">
+					<a data-toggle="tab" role="tab" aria-controls="tabs_desc_3" href="#tabs_desc_3" aria-expanded="false"><i class="fa fa-phone"></i><span>Call Center</span>
+					</a>
+				</li>
+
+				<li role="presentation" class="">
+					<a data-toggle="tab" role="tab" aria-controls="tabs_desc_4" href="#tabs_desc_4" aria-expanded="false"><i class="fa fa-pencil"></i><span>Survey</span>
+					</a>
+				</li>
+				
+				<li role="presentation" class="">
+					<a data-toggle="tab" role="tab" aria-controls="tabs_desc_5" href="#tabs_desc_5" aria-expanded="false"><i class="fa fa-cogs"></i><span>Tools</span>
+					</a>
+				</li>
+				
+			</ul>
+
+			<!-- Tab panes -->
+			<div id="tab-content" class="tab-content">
+				<div id="tabs_desc_1" class="tab-pane active animated fadeIn" role="tabpanel">
+					<script type="text/javascript">
+						function iframeLoaded_QTHXcQshMO() {
+							var iFrameID = document.getElementById('iframe_QTHXcQshMO');
+							if(iFrameID) {
+
+								iFrameID.height = "";
+								iFrameID.contentWindow.postMessage("setheight","http://www.embeddedanalytics.com");
+									//iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+
+								}
+							}
+							function receiveMessage(event)
+							{
+								var iFrameID = document.getElementById('iframe_QTHXcQshMO');
+								if (iFrameID) {
+									iFrameID.height = event.data+"px";
+								}
+							}
+
+							window.addEventListener("message", receiveMessage, false);
+					</script>
+
+					<iframe width="100%" height="2101px" frameborder="0" title="Embed Google Analytics Charts into your Website!" scrolling="yes" type="text/html" src="http://www.embeddedanalytics.com/reports/displayreport?reportcode=QTHXcQshMO&amp;chckcode=gaBfDveE872CcDjC7COMUZ" marginheight="0" marginwidth="0" onload="iframeLoaded_QTHXcQshMO()" id="iframe_QTHXcQshMO"></iframe>
+
+				</div>
+
+				<div id="tabs_desc_2" class="tab-pane animated" role="tabpanel">
+					<?php echo do_shortcode("[wpdatatable id=1 var1='".$_SESSION['start_date']."' var2='".$_SESSION['end_date']."']"); ?>
+				</div>
+
+				<div id="tabs_desc_3" class="tab-pane animated" role="tabpanel">
+					Call Center Data
+				</div>
+				<div id="tabs_desc_4" class="tab-pane animated" role="tabpanel">
+					Survey Table
+				</div>
+				<div id="tabs_desc_5" class="tab-pane animated" role="tabpanel">
+					Tools
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+			jQuery(function () {
+				jQuery('#myTab a:first').tab('show')
+			});
+
+			jQuery(function(){
+				var b="fadeIn";
+				var c;
+				var a;
+				d(jQuery("#myTab a"),jQuery("#tab-content"));function d(e,f,g){
+					e.click(function(i){
+						i.preventDefault();
+						jQuery(this).tab("show");
+						var h=jQuery(this).data("easein");
+						if(c){c.removeClass(a);}
+						if(h){f.find("div.active").addClass("animated "+h);a=h;}
+						else{if(g){f.find("div.active").addClass("animated "+g);a=g;}else{f.find("div.active").addClass("animated "+b);a=b;}}c=f.find("div.active");
+					});
+				}
+			});
+		</script>
+
+		</div><!-- #content .site-content -->
+	</div><!-- #primary .content-area -->
+
+<?php get_footer(); ?>

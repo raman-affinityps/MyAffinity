@@ -1,0 +1,49 @@
+# Copyright (C) 2013 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/p5\n"
+"POT-Creation-Date: 2013-06-20 18:23:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: index.php:135
+msgid "Passwords:"
+msgstr ""
+
+#: index.php:150
+msgid "Add a password"
+msgstr ""
+
+#: index.php:227
+msgid "Password:"
+msgstr ""
+
+#: index.php:234 index.php:235
+msgid "Delete this password"
+msgstr ""
+
+#: index.php:241
+msgid "Expiration date:"
+msgstr ""
+
+#: index.php:248
+msgid "Change expiration date"
+msgstr ""
+
+#: index.php:254
+msgid "Clear date"
+msgstr ""
+
+#: index.php:258
+msgid "Remove this password"
+msgstr ""
+
+#: index.php:411
+msgid "None"
+msgstr ""

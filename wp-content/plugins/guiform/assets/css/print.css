@@ -1,0 +1,95 @@
+@page 
+{
+  size: auto;   /* auto is the current printer page size */
+  margin: 15px;  /* this affects the margin in the printer settings */
+}
+        
+@media print {
+	
+	body {  
+		background: #fff none !important;  
+		color: #000 !important; 
+		margin: 0;
+		padding: 0; 
+	} 
+	
+	#header li,
+	#header li.formName-list{
+		float: none;
+	}
+	
+	#header,
+	#header li.formName-list{
+	margin: 10px 0 0 0;
+		padding: 0;
+		border: 1px solid #CCCCCC;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	
+	#header{
+		padding: 15px;
+		border: medium none;
+		background: transparent none !important; 
+	}
+	
+	#header li span,
+	#tools,
+	#properties,
+	#adminmenuwrap,
+	#wpfooter,
+	.update-nag,
+	#canvas input[type="reset"],
+	#canvas input[type="submit"],
+	#canvas input[type="button"]{
+		display: none;
+	} 
+	
+	#header #formName{
+		display: block;
+		text-align: left;
+	}
+	
+	#container{
+		border: 1px solid #CCCCCC !important;
+		height: 95%  !important;
+		width: 100%  !important;
+		position: fixed !important;
+		display: table-row-group !important;
+		margin: 0px 0 20px 0;
+		top: 50px;
+		left: 0;
+		right: 0px
+		bottom: 20px;
+		border-radius: 0px;
+		border: 1px solid #CCCCCC;
+	}
+	
+	#canvas ul{
+		width: 780px;
+	}
+	
+	#canvas {
+		background-color: white;
+		height: 100%;
+		color: #000 !important;
+		width: 100%;
+		margin: 50px 2px 2px 2px;
+		padding: 0px;
+		position: fixed !important;
+		display: table-row-group !important;
+		border-radius: 0px;
+	}
+	
+	#container,
+	#canvas #containment,
+	#canvas li.active{
+		border: medium none;
+	}
+	
+	#canvas li.shrink label, #canvas li.top-align label {
+    display: table-row-group;
+	}
+}
