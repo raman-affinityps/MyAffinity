@@ -570,7 +570,12 @@ function analytics_dashboard()
         /*Avg Session Duration*/
         $otherOpt       = array( 'dimensions'=> 'ga:date' );
         $usermatrix     = ['ga:avgSessionDuration'];
-        $obj->getGaData(ANALYTIC_DEFAULT_START_DATE, ANALYTIC_DEFAULT_END_DATE, $usermatrix,$otherOpt,'avgSessionDuration',$ajax);     
+        $obj->getGaData(ANALYTIC_DEFAULT_START_DATE, ANALYTIC_DEFAULT_END_DATE, $usermatrix,$otherOpt,'avgSessionDuration',$ajax);
+        
+        /*Real time Visit*/
+        $otherOpt       = array( 'dimensions'=> 'rt:medium');
+        $usermatrix     = ['rt:activeUsers'];
+        $obj->getGaData(ANALYTIC_DEFAULT_START_DATE, ANALYTIC_DEFAULT_END_DATE,$usermatrix,$otherOpt,'realTimeVisit',$ajax);
     }
     else
     {
@@ -616,6 +621,13 @@ function analytics_dashboard()
                 $otherOpt   = array( 'dimensions'=> 'ga:deviceCategory','filters' => 'ga:pagePath==/#request-quote' );
                 $usermatrix = ['ga:users'];
                 $obj->getGaData(ANALYTIC_DEFAULT_START_DATE, ANALYTIC_DEFAULT_END_DATE,$usermatrix,$otherOpt,'semiCircleDeviceShare',$ajax);
+                break;
+            case 9:
+                //$otherOpt   = array( 'dimensions'=> 'rt:medium');
+                //$usermatrix = ['rt:activeUsers'];
+                $otherOpt       = array( 'rt:deviceCategory' );
+                $usermatrix     = ['rt:activeUsers'];
+                $obj->getGaData(ANALYTIC_DEFAULT_START_DATE, ANALYTIC_DEFAULT_END_DATE,$usermatrix,$otherOpt,'realTimeVisit',$ajax);
                 break;
             default:
         } 
