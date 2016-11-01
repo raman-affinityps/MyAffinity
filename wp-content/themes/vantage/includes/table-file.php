@@ -74,9 +74,22 @@ class TableFormat
             case avgSessionDuration:
                 $this->drawAvgSessionDuration($data,$ajax);
                 break;
+            case realTimeVisit:
+                $this->drawRealTimeVisit($data,$ajax);
+                break;
             default:
 
         } 		  
+    }
+    public function drawRealTimeVisit($data,$ajax)
+    {
+        $finalDataLineChart=$this->getHighChartJson('',$data);
+        if($ajax==1)
+        {    
+            //echo $finalDataLineChart;
+            echo str_replace('["["','[["',str_replace(']"]',"]]",$finalDataLineChart));
+            exit;
+        }
     }
     public function drawGeoLocation($data,$ajax)
     {
