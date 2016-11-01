@@ -59,14 +59,23 @@ class AnalyticsData
             $this->metrix    = ($metrix!='')?$metrix:ANALYTIC_DEFAULT_METRIX;
             $this->startDate = ($startDate!='')?$startDate:ANALYTIC_DEFAULT_START_DATE;
             $this->endDate   = ($endDate!='')?$endDate:ANALYTIC_DEFAULT_END_DATE;
-            if(is_array($otherOpt) && count($otherOpt)>0) 
-            {                 
-                $result[$key] = $this->analytics->data_ga->get(ANALYTIC_ID, $this->startDate, $this->endDate,$this->metrix,$otherOpt);
- 
-            } 
+            if($dataformat=='realTimeVisit')
+            {
+                //$result[$key] ="";
+                 $result[$key] = $this->analytics->data_realtime->get(ANALYTIC_ID, $this->startDate, $this->endDate,$this->metrix,$otherOpt);
+                
+            }
             else
             {
-                $result[$key] = $this->analytics->data_ga->get(ANALYTIC_ID, $this->startDate, $this->endDate,$this->metrix);
+                if(is_array($otherOpt) && count($otherOpt)>0) 
+                {                 
+                    $result[$key] = $this->analytics->data_ga->get(ANALYTIC_ID, $this->startDate, $this->endDate,$this->metrix,$otherOpt);
+
+                } 
+                else
+                {
+                    $result[$key] = $this->analytics->data_ga->get(ANALYTIC_ID, $this->startDate, $this->endDate,$this->metrix);
+                }
             }
 	}
         if(count($result)<2)
